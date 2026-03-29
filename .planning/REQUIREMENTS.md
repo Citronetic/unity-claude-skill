@@ -1,7 +1,7 @@
 # Requirements: Unity Development Skill for Claude Code
 
 **Defined:** 2026-03-29
-**Core Value:** Every Unity development workflow, CLI command, and best practice from the official tutorials is captured in a single, accurate, actionable skill file — no gaps, no omissions.
+**Core Value:** Every Unity development workflow, CLI command, and best practice from the official tutorials is captured in a single, accurate, actionable skill file -- no gaps, no omissions.
 
 ## v1 Requirements
 
@@ -118,7 +118,7 @@
 
 ### Advanced Content
 
-- **ADV-01**: DOTS/ECS coverage (deferred — rapidly evolving in Unity 6.4+)
+- **ADV-01**: DOTS/ECS coverage (deferred -- rapidly evolving in Unity 6.4+)
 - **ADV-02**: Multiplayer/Netcode for GameObjects
 - **ADV-03**: HLSL shader programming (Shader Graph covers most needs for v1)
 - **ADV-04**: VFX Graph advanced usage
@@ -138,7 +138,7 @@
 
 | Feature | Reason |
 |---------|--------|
-| Unity 4.x/5.x legacy patterns | Actively harmful — deprecated APIs cause compile errors |
+| Unity 4.x/5.x legacy patterns | Actively harmful -- deprecated APIs cause compile errors |
 | UNet networking | Deprecated, replaced by Netcode for GameObjects |
 | OnGUI for game UI | Legacy system, replaced by UI Toolkit |
 | UnityScript/Boo | Removed from Unity entirely |
@@ -154,13 +154,70 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| (Populated during roadmap creation) | | |
+| SCRP-01 | Phase 1 | Pending |
+| SCRP-02 | Phase 1 | Pending |
+| SCRP-03 | Phase 1 | Pending |
+| SCRP-04 | Phase 1 | Pending |
+| SCRP-05 | Phase 1 | Pending |
+| SCRP-06 | Phase 1 | Pending |
+| EXTR-01 | Phase 2 | Pending |
+| EXTR-02 | Phase 2 | Pending |
+| EXTR-03 | Phase 2 | Pending |
+| EXTR-04 | Phase 2 | Pending |
+| EXTR-05 | Phase 2 | Pending |
+| SYNTH-01 | Phase 3 | Pending |
+| SYNTH-02 | Phase 3 | Pending |
+| SYNTH-03 | Phase 3 | Pending |
+| SYNTH-04 | Phase 3 | Pending |
+| SYNTH-05 | Phase 3 | Pending |
+| SKIL-01 | Phase 4 | Pending |
+| SKIL-02 | Phase 4 | Pending |
+| SKIL-03 | Phase 4 | Pending |
+| SKIL-04 | Phase 4 | Pending |
+| SKIL-05 | Phase 4 | Pending |
+| EDIT-01 | Phase 5 | Pending |
+| EDIT-02 | Phase 5 | Pending |
+| EDIT-03 | Phase 5 | Pending |
+| SCPT-01 | Phase 5 | Pending |
+| SCPT-02 | Phase 5 | Pending |
+| SCPT-03 | Phase 5 | Pending |
+| SCPT-04 | Phase 5 | Pending |
+| PHYS-01 | Phase 6 | Pending |
+| PHYS-02 | Phase 6 | Pending |
+| PHYS-03 | Phase 6 | Pending |
+| INPUT-01 | Phase 6 | Pending |
+| INPUT-02 | Phase 6 | Pending |
+| INPUT-03 | Phase 6 | Pending |
+| TEST-01 | Phase 6 | Pending |
+| TEST-02 | Phase 6 | Pending |
+| RNDR-01 | Phase 7 | Pending |
+| RNDR-02 | Phase 7 | Pending |
+| RNDR-03 | Phase 7 | Pending |
+| UI-01 | Phase 7 | Pending |
+| UI-02 | Phase 7 | Pending |
+| UI-03 | Phase 7 | Pending |
+| ANIM-01 | Phase 7 | Pending |
+| ANIM-02 | Phase 7 | Pending |
+| AUDIO-01 | Phase 7 | Pending |
+| AUDIO-02 | Phase 7 | Pending |
+| BUILD-01 | Phase 8 | Pending |
+| BUILD-02 | Phase 8 | Pending |
+| BUILD-03 | Phase 8 | Pending |
+| ASSET-01 | Phase 8 | Pending |
+| ASSET-02 | Phase 8 | Pending |
+| MOBL-01 | Phase 8 | Pending |
+| MOBL-02 | Phase 8 | Pending |
+| QUAL-01 | Phase 9 | Pending |
+| QUAL-02 | Phase 9 | Pending |
+| QUAL-03 | Phase 9 | Pending |
+| QUAL-04 | Phase 9 | Pending |
+| QUAL-05 | Phase 9 | Pending |
 
 **Coverage:**
-- v1 requirements: 50 total
-- Mapped to phases: 0 (pending roadmap)
-- Unmapped: 50
+- v1 requirements: 58 total
+- Mapped to phases: 58/58
+- Unmapped: 0
 
 ---
 *Requirements defined: 2026-03-29*
-*Last updated: 2026-03-29 after initial definition*
+*Last updated: 2026-03-29 after roadmap creation (traceability populated)*
