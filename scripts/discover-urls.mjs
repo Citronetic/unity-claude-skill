@@ -547,7 +547,8 @@ function mergeIntoManifest(existing, newUrlsBySource) {
     }
   }
 
-  const sourceStats = {};
+  // Preserve existing source stats and merge in new ones
+  const sourceStats = existing?.sources ? { ...existing.sources } : {};
   let totalNew = 0;
 
   for (const [sourceKey, urls] of Object.entries(newUrlsBySource)) {
