@@ -1,0 +1,33 @@
+This version of Unity is unsupported.
+
+Reflective Vertex-Lit
+
+Reflective Specular
+
+# Reflective Diffuse
+
+**Note.** Unity 5 introduced the [Standard Shader](shader-StandardShader.html) which replaces this **shader**A program that runs on the GPU. [More info](Shaders.html)
+See in [Glossary](Glossary.html#Shader).
+
+## Reflective Properties
+
+**Note.** Unity 5 introduced the [Standard Shader](shader-StandardShader.html) which replaces this shader.
+
+This shader will simulate reflective surfaces such as cars, metal objects etc. It requires an environment **Cubemap**A collection of six square textures that can represent the reflections in an environment or the skybox drawn behind your geometry. The six squares form the faces of an imaginary cube that surrounds an object; each face represents the view along the directions of the world axes (up, down, left, right, forward and back). [More info](class-Cubemap-landing.html)
+See in [Glossary](Glossary.html#Cubemap) which will define what exactly is reflected. The main texture’s alpha channel defines the strength of reflection on the object’s surface. Any **scene**A Scene contains the environments and menus of your game. Think of each unique Scene file as a unique level. In each Scene, you place your environments, obstacles, and decorations, essentially designing and building your game in pieces. [More info](CreatingScenes.html)
+See in [Glossary](Glossary.html#Scene) lights will add illumination on top of what is reflected.
+
+## Diffuse Properties
+
+Diffuse computes a simple (Lambertian) lighting model. The lighting on the surface decreases as the angle between it and the light decreases. The lighting depends only on this angle, and does not change as the **camera**A component which creates an image of a particular viewpoint in your scene. The output is either drawn to the screen or captured as a texture. [More info](CamerasOverview.html)
+See in [Glossary](Glossary.html#Camera) moves or rotates around.
+
+## Performance
+
+Generally, this shader is cheap to render. For more details, please view the [Shader Peformance page](shader-Performance.html).
+
+ReflectiveDiffuse
+
+Reflective Vertex-Lit
+
+Reflective Specular

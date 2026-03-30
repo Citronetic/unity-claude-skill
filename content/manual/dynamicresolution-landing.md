@@ -1,0 +1,28 @@
+This version of Unity is unsupported.
+
+Introduction to changing resolution scale
+
+Introduction to Dynamic Resolution
+
+# Dynamic Resolution
+
+Resources for rendering at a lower resolution dynamically, to reduce the amount of work for the GPU.
+
+| Page | Description |
+| --- | --- |
+| Introduction to Dynamic Resolution | Learn about how Dynamic Resolution scales down the resolution when the frame rate of the application decreases. |
+| Control scaling with Dynamic Resolution | Calculate the width and height needed to keep the frame rate high. |
+| Control when Dynamic Resolution happens | Use the DynamicallyScalableExplicit API to scale render targets manually. |
+| Enable or disable Dynamic Resolution for render targets | Control which render targets dynamically scale. |
+
+## Additional resources
+
+- [Introduction to changing resolution scale](resolution-scale-introduction.html)
+
+- [Upscaling resolution in URP with Spatial-Temporal Post-processing](urp/change-resolution-scale-urp.html)
+
+- [Resolution control in XR projects](xr-graphics-resolution-scaling.html)
+
+Introduction to changing resolution scale
+
+Introduction to Dynamic Resolution

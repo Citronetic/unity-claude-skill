@@ -1,0 +1,111 @@
+This version of Unity is unsupported.
+
+
+
+# [PropertyStreamHandle](Animations.PropertyStreamHandle.html).SetFloat
+
+
+
+
+                  Leave feedback
+
+
+
+
+                  Suggest a change
+
+
+
+
+
+
+
+
+
+
+
+
+## Success!
+
+
+
+Thank you for helping us improve the quality of Unity Documentation. Although we cannot accept all submissions, we do read each suggested change from our users and will make updates where applicable.
+
+                      Close
+
+
+
+
+## Submission failed
+
+
+
+For some reason your suggested change could not be submitted. Please <a>try again</a> in a few minutes. And thank you for taking the time to help us improve the quality of Unity Documentation.
+
+                      Close
+
+
+                      Your name
+
+
+                      Your email
+
+
+                      Suggestion*
+
+                      Submit suggestion
+
+
+Cancel
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Declaration
+
+public void SetFloat([Animations.AnimationStream](Animations.AnimationStream.html) stream,
+float value);
+
+
+
+
+
+
+### Parameters
+
+
+
+| Parameter | Description |
+| --- | --- |
+| stream | The AnimationStream that holds the animated values. |
+| value | The new float property value. |
+
+
+
+
+
+### Description
+
+
+
+Sets the float property value into a stream.
+
+
+
+
+
+If the property is not a float, the method will throw an `InvalidOperationException`.
+
+
+            

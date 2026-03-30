@@ -1,0 +1,169 @@
+This version of Unity is unsupported.
+
+
+
+# GUILayout.AreaScope Constructor
+
+
+
+
+                  Leave feedback
+
+
+
+
+                  Suggest a change
+
+
+
+
+
+
+
+
+
+
+
+
+## Success!
+
+
+
+Thank you for helping us improve the quality of Unity Documentation. Although we cannot accept all submissions, we do read each suggested change from our users and will make updates where applicable.
+
+                      Close
+
+
+
+
+## Submission failed
+
+
+
+For some reason your suggested change could not be submitted. Please <a>try again</a> in a few minutes. And thank you for taking the time to help us improve the quality of Unity Documentation.
+
+                      Close
+
+
+                      Your name
+
+
+                      Your email
+
+
+                      Suggestion*
+
+                      Submit suggestion
+
+
+Cancel
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Declaration
+
+public GUILayout.AreaScope([Rect](Rect.html) screenRect);
+
+
+
+
+
+
+## Declaration
+
+public GUILayout.AreaScope([Rect](Rect.html) screenRect,
+string text);
+
+
+
+
+
+
+## Declaration
+
+public GUILayout.AreaScope([Rect](Rect.html) screenRect,
+[Texture](Texture.html) image);
+
+
+
+
+
+
+## Declaration
+
+public GUILayout.AreaScope([Rect](Rect.html) screenRect,
+[GUIContent](GUIContent.html) content);
+
+
+
+
+
+
+## Declaration
+
+public GUILayout.AreaScope([Rect](Rect.html) screenRect,
+string text,
+[GUIStyle](GUIStyle.html) style);
+
+
+
+
+
+
+## Declaration
+
+public GUILayout.AreaScope([Rect](Rect.html) screenRect,
+[Texture](Texture.html) image,
+[GUIStyle](GUIStyle.html) style);
+
+
+
+
+
+
+## Declaration
+
+public GUILayout.AreaScope([Rect](Rect.html) screenRect,
+[GUIContent](GUIContent.html) content,
+[GUIStyle](GUIStyle.html) style);
+
+
+
+
+
+
+### Parameters
+
+
+
+| Parameter | Description |
+| --- | --- |
+| text | Optional text to display in the area. |
+| image | Optional texture to display in the area. |
+| content | Optional text, image and tooltip top display for this area. |
+| style | The style to use. If left out, the empty GUIStyle (GUIStyle.none) is used, giving a transparent background. |
+
+
+
+
+
+### Description
+
+
+
+Create a new AreaScope and begin the corresponding Area.
+
+
+            

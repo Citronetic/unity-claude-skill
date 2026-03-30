@@ -1,0 +1,117 @@
+This version of Unity is unsupported.
+
+
+
+# [ParticleSystemRenderer](ParticleSystemRenderer.html).maxParticleSize
+
+
+
+
+                  Leave feedback
+
+
+
+
+                  Suggest a change
+
+
+
+
+
+
+
+
+
+
+
+
+## Success!
+
+
+
+Thank you for helping us improve the quality of Unity Documentation. Although we cannot accept all submissions, we do read each suggested change from our users and will make updates where applicable.
+
+                      Close
+
+
+
+
+## Submission failed
+
+
+
+For some reason your suggested change could not be submitted. Please <a>try again</a> in a few minutes. And thank you for taking the time to help us improve the quality of Unity Documentation.
+
+                      Close
+
+
+                      Your name
+
+
+                      Your email
+
+
+                      Suggestion*
+
+                      Submit suggestion
+
+
+Cancel
+
+
+
+
+
+
+
+
+
+
+
+
+                    public float maxParticleSize;
+
+
+
+
+
+
+### Description
+
+
+
+Clamp the maximum particle size.
+
+
+
+
+
+Particles can become very heavy on fillrate. Use this setting to make sure they don't
+use too much performance when up close to the viewer.
+
+
+              
+
+
+```
+using UnityEngine;
+using System.Collections;[RequireComponent(typeof(ParticleSystem))]
+public class ExampleClass : MonoBehaviour {    private ParticleSystem ps;
+    private ParticleSystemRenderer psr;
+    public float minSize = 0.0f;
+    public float maxSize = 1.0f;    void Start() {        ps = GetComponent<ParticleSystem>();
+        psr = GetComponent<ParticleSystemRenderer>();        var main = ps.main;
+        main.startSize = new ParticleSystem.MinMaxCurve(0.1f, 5.0f);
+    }    void Update() {
+        psr.minParticleSize = minSize;
+        psr.maxParticleSize = maxSize;
+    }    void OnGUI() {
+        GUI.Label(new Rect(25, 40, 200, 30), "Minimum Screen Space Size");
+        GUI.Label(new Rect(25, 80, 200, 30), "Maximum Screen Space Size");        minSize = GUI.HorizontalSlider(new Rect(245, 45, 100, 30), minSize, 0.0f, 1.0f);
+        maxSize = GUI.HorizontalSlider(new Rect(245, 85, 100, 30), maxSize, 0.0f, 1.0f);
+    }
+}
+```
+
+
+            

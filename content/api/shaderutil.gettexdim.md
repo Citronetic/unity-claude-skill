@@ -1,0 +1,122 @@
+This version of Unity is unsupported.
+
+
+
+# [ShaderUtil](ShaderUtil.html).GetTexDim
+
+
+
+
+                  Leave feedback
+
+
+
+
+                  Suggest a change
+
+
+
+
+
+
+
+
+
+
+
+
+## Success!
+
+
+
+Thank you for helping us improve the quality of Unity Documentation. Although we cannot accept all submissions, we do read each suggested change from our users and will make updates where applicable.
+
+                      Close
+
+
+
+
+## Submission failed
+
+
+
+For some reason your suggested change could not be submitted. Please <a>try again</a> in a few minutes. And thank you for taking the time to help us improve the quality of Unity Documentation.
+
+                      Close
+
+
+                      Your name
+
+
+                      Your email
+
+
+                      Suggestion*
+
+                      Submit suggestion
+
+
+Cancel
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Declaration
+
+public static [Rendering.TextureDimension](Rendering.TextureDimension.html) GetTexDim([Shader](Shader.html) s,
+int propertyIdx);
+
+
+
+
+
+
+### Parameters
+
+
+
+| Parameter | Description |
+| --- | --- |
+| s | The shader to get the property from. |
+| propertyIdx | The property index to use. |
+
+
+
+
+
+### Returns
+
+
+
+**TextureDimension**
+        Texture dimension.
+
+
+
+
+
+### Description
+
+
+
+Gets texture dimension of a shader property.
+
+
+
+
+
+Additional resources: [TextureDimension](Rendering.TextureDimension.html), [GetPropertyCount](ShaderUtil.GetPropertyCount.html).
+
+
+            

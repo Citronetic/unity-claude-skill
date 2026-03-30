@@ -1,0 +1,114 @@
+This version of Unity is unsupported.
+
+
+
+# [Preset](Presets.Preset.html).UpdateProperties
+
+
+
+
+                  Leave feedback
+
+
+
+
+                  Suggest a change
+
+
+
+
+
+
+
+
+
+
+
+
+## Success!
+
+
+
+Thank you for helping us improve the quality of Unity Documentation. Although we cannot accept all submissions, we do read each suggested change from our users and will make updates where applicable.
+
+                      Close
+
+
+
+
+## Submission failed
+
+
+
+For some reason your suggested change could not be submitted. Please <a>try again</a> in a few minutes. And thank you for taking the time to help us improve the quality of Unity Documentation.
+
+                      Close
+
+
+                      Your name
+
+
+                      Your email
+
+
+                      Suggestion*
+
+                      Submit suggestion
+
+
+Cancel
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Declaration
+
+public bool UpdateProperties([Object](Object.html) source);
+
+
+
+
+
+
+### Parameters
+
+
+
+| Parameter | Description |
+| --- | --- |
+| source | Used by the Preset to get its new serialized values. |
+
+
+
+
+
+### Returns
+
+
+
+**bool**
+        Returns true if the Preset was updated, false otherwise.
+
+
+
+
+
+### Description
+
+
+
+Updates this Preset's properties from the given Object's values. The given Object's type must match this Preset's type.
+
+
+            

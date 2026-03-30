@@ -1,0 +1,93 @@
+This version of Unity is unsupported.
+
+
+
+# [AudioConfiguration](AudioConfiguration.html).numVirtualVoices
+
+
+
+
+                  Leave feedback
+
+
+
+
+                  Suggest a change
+
+
+
+
+
+
+
+
+
+
+
+
+## Success!
+
+
+
+Thank you for helping us improve the quality of Unity Documentation. Although we cannot accept all submissions, we do read each suggested change from our users and will make updates where applicable.
+
+                      Close
+
+
+
+
+## Submission failed
+
+
+
+For some reason your suggested change could not be submitted. Please <a>try again</a> in a few minutes. And thank you for taking the time to help us improve the quality of Unity Documentation.
+
+                      Close
+
+
+                      Your name
+
+
+                      Your email
+
+
+                      Suggestion*
+
+                      Submit suggestion
+
+
+Cancel
+
+
+
+
+
+
+
+
+
+
+
+
+                    public int numVirtualVoices;
+
+
+
+
+
+
+### Description
+
+
+
+The  maximum number of managed sounds in the game. Beyond this limit sounds will simply stop playing.
+
+
+
+
+
+**WebGL:** This setting doesn't affect WebGL because there is no limit on the number of audio channels in the WebGL platform.
+For an example of how to use this property, refer to [AudioSettings.Reset](AudioSettings.Reset.html).
+
+
+            

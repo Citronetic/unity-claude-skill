@@ -1,0 +1,86 @@
+This version of Unity is unsupported.
+
+
+
+# [AccessibilityNode](Accessibility.AccessibilityNode.html).parent
+
+
+
+
+                  Leave feedback
+
+
+
+
+                  Suggest a change
+
+
+
+
+
+
+
+
+
+
+
+
+## Success!
+
+
+
+Thank you for helping us improve the quality of Unity Documentation. Although we cannot accept all submissions, we do read each suggested change from our users and will make updates where applicable.
+
+                      Close
+
+
+
+
+## Submission failed
+
+
+
+For some reason your suggested change could not be submitted. Please <a>try again</a> in a few minutes. And thank you for taking the time to help us improve the quality of Unity Documentation.
+
+                      Close
+
+
+                      Your name
+
+
+                      Your email
+
+
+                      Suggestion*
+
+                      Submit suggestion
+
+
+Cancel
+
+
+
+
+
+
+
+
+
+
+
+
+                    public [Accessibility.AccessibilityNode](Accessibility.AccessibilityNode.html) parent;
+
+
+
+
+
+
+### Description
+
+
+
+The parent of the node. If the node is at the root level, the parent value is `null`.
+
+
+            

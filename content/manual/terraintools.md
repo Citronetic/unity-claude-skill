@@ -1,0 +1,35 @@
+This version of Unity is unsupported.
+
+Using Terrain at runtime
+
+Physics
+
+# Terrain and the Terrain Tools package
+
+The Unity Editor has a built-in **Terrain**The landscape in your scene. A Terrain GameObject adds a large flat plane to your scene and you can use the Terrain’s Inspector window to create a detailed landscape. [More info](terrain-UsingTerrains.html)
+See in [Glossary](Glossary.html#Terrain) system and an optional Terrain Tools package.
+
+# Terrain Tools package
+
+The [Terrain Tools package](https://docs.unity3d.com/Packages/com.unity.terrain-tools@latest/index.html) adds functionality to Unity’s built-in Terrain tools. It includes more advanced features such as Erosion, Noise, and Brush Mask Filters. It also contains the Terrain Toolbox, which lets you create new Terrain from preset files or imported **heightmaps**A greyscale Texture that stores height data for an object. Each pixel stores the height difference perpendicular to the face that pixel represents.
+See in [Glossary](Glossary.html#Heightmap), batch change settings on multiple Terrain tiles, and import and export splatmaps and heightmaps.
+
+Use the package to:
+
+- Create more complex terrains, with finer control, than is possible with the built-in tools.
+
+- Author data in external tools and import them into your Terrain.
+
+- Control the settings of multiple tiles at once, as part of a larger world.
+
+To install the package:
+
+1. Open the Package Manager window (menu: **Window** > **Package Manager**).
+
+2. In the **Unity Registry** list, search for **Terrain Tools**.
+
+3. Select **Install**.
+
+Using Terrain at runtime
+
+Physics
