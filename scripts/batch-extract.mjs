@@ -62,6 +62,7 @@ function parseArgs() {
     source: null,
     limit: Infinity,
     dryRun: false,
+    pendingOnly: false,
     help: false,
   };
 
@@ -75,6 +76,9 @@ function parseArgs() {
         break;
       case '--dry-run':
         opts.dryRun = true;
+        break;
+      case '--pending-only':
+        opts.pendingOnly = true;
         break;
       case '--help':
       case '-h':
@@ -95,6 +99,7 @@ Usage:
   node scripts/batch-extract.mjs --source manual     Extract only manual URLs
   node scripts/batch-extract.mjs --source api        Extract only API URLs
   node scripts/batch-extract.mjs --limit 50          Extract first N pending URLs
+  node scripts/batch-extract.mjs --pending-only       Skip previously failed URLs
   node scripts/batch-extract.mjs --dry-run           Show extraction plan without running
   node scripts/batch-extract.mjs --help              Show this help
 
@@ -139,9 +144,11 @@ function saveManifest(manifest) {
  * @param {string|null} sourceFilter - Optional source filter
  * @returns {Array} Filtered and sorted URL entries
  */
-function getEligibleUrls(urls, sourceFilter) {
+function getEligibleUrls(urls, sourceFilter, pendingOnly = false) {
   let eligible = urls.filter(entry =>
-    entry.status === 'pending' || entry.status === 'failed'
+    pendingOnly
+      ? entry.status === 'pending'
+      : (entry.status === 'pending' || entry.status === 'failed')
   );
 
   // Apply source filter
@@ -161,10 +168,15 @@ function getEligibleUrls(urls, sourceFilter) {
   }
 
   // Sort by source priority: learn -> manual -> api
+  // Within same priority, pending URLs come before failed ones (process new URLs first)
   eligible.sort((a, b) => {
     const prioA = SOURCE_PRIORITY[a.source] ?? 99;
     const prioB = SOURCE_PRIORITY[b.source] ?? 99;
-    return prioA - prioB;
+    if (prioA !== prioB) return prioA - prioB;
+    // Pending before failed
+    if (a.status === 'pending' && b.status !== 'pending') return -1;
+    if (a.status !== 'pending' && b.status === 'pending') return 1;
+    return 0;
   });
 
   return eligible;
@@ -505,12 +517,12 @@ async function main() {
   console.log(`Loaded manifest: ${manifest.totalUrls} total URLs`);
 
   // Get eligible URLs
-  const eligible = getEligibleUrls(manifest.urls, opts.source);
+  const eligible = getEligibleUrls(manifest.urls, opts.source, opts.pendingOnly);
 
   // Apply limit
   const batch = eligible.slice(0, opts.limit);
 
-  console.log(`Eligible: ${eligible.length} URLs (status: pending/failed)`);
+  console.log(`Eligible: ${eligible.length} URLs (status: ${opts.pendingOnly ? 'pending' : 'pending/failed'})`);
   console.log(`Batch:    ${batch.length} URLs${opts.limit < Infinity ? ` (limited to ${opts.limit})` : ''}`);
 
   if (opts.source) {

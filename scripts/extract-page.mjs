@@ -31,9 +31,9 @@ import { dirname } from 'node:path';
 // Configuration
 // ---------------------------------------------------------------------------
 
-const MAX_RETRIES = 5;
-const RETRY_DELAY_MS = 10_000;
-const NAVIGATION_TIMEOUT_MS = 30_000;
+const MAX_RETRIES = parseInt(process.env.MAX_RETRIES || '5', 10);
+const RETRY_DELAY_MS = parseInt(process.env.RETRY_DELAY_MS || '10000', 10);
+const NAVIGATION_TIMEOUT_MS = parseInt(process.env.NAV_TIMEOUT_MS || '30000', 10);
 const EXPANSION_WAIT_MS = 1_500; // Wait after clicking expandable elements
 const MIN_SUBSTANTIVE_WORDS = 100;
 
