@@ -167,7 +167,8 @@ async function expandHiddenContent(page) {
  */
 async function extractToMarkdown(page) {
   return page.evaluate(() => {
-    // Find the main content container (try progressively broader selectors)
+    // Find the main content container by picking the selector with the most content.
+    // This avoids accidentally choosing a shallow navigation wrapper over the real content area.
     const contentSelectors = [
       'article',
       'main',
@@ -176,25 +177,30 @@ async function extractToMarkdown(page) {
       '.section-content',
       '.markdown-body',
       '.markdown',
-      '.content',
-      '#content-wrapper',
-      '.documentation-content',
       // Unity docs specific
       '.section',
       '.scrollspy',
+      '.documentation-content',
+      '.content',
+      '#content-wrapper',
     ];
 
     let contentRoot = null;
+    let bestLength = 0;
+
     for (const sel of contentSelectors) {
       const el = document.querySelector(sel);
-      if (el && el.textContent.trim().length > 200) {
-        contentRoot = el;
-        break;
+      if (el) {
+        const len = el.textContent.trim().length;
+        if (len > bestLength) {
+          bestLength = len;
+          contentRoot = el;
+        }
       }
     }
 
-    // Fallback to body if no content container found
-    if (!contentRoot) {
+    // Only use the best match if it has meaningful content
+    if (!contentRoot || bestLength < 200) {
       contentRoot = document.body;
     }
 
@@ -606,7 +612,11 @@ async function main() {
   process.exit(result.success ? 0 : 1);
 }
 
-main().catch((err) => {
-  console.error('Fatal error:', err.message);
-  process.exit(1);
-});
+// Only run CLI when executed directly (not when imported)
+import { fileURLToPath } from 'node:url';
+if (process.argv[1] === fileURLToPath(import.meta.url)) {
+  main().catch((err) => {
+    console.error('Fatal error:', err.message);
+    process.exit(1);
+  });
+}
