@@ -34,11 +34,12 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. A scraping manifest file exists listing every content URL with status tracking (pending/scraped/verified/failed)
   4. Hidden content behind tabs and accordions is expanded and captured in at least one test page
   5. Content verification confirms extracted pages have substantive content (>100 words)
-**Plans**: TBD
+**Plans**: 3 plans
 
 Plans:
-- [ ] 01-01: TBD
-- [ ] 01-02: TBD
+- [ ] 01-01-PLAN.md -- Chrome integration setup and CN site language resolution
+- [ ] 01-02-PLAN.md -- URL tree discovery and manifest creation with status tracking
+- [ ] 01-03-PLAN.md -- Hidden content expansion and content verification pipeline
 
 ### Phase 2: Content Extraction
 **Goal**: Every tutorial content page is scraped, converted to clean Markdown, and verified against the manifest
@@ -170,7 +171,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 (and 7 in parallel) 
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Scraping Infrastructure | 0/TBD | Not started | - |
+| 1. Scraping Infrastructure | 0/3 | Planning | - |
 | 2. Content Extraction | 0/TBD | Not started | - |
 | 3. Content Synthesis | 0/TBD | Not started | - |
 | 4. Skill Foundation | 0/TBD | Not started | - |
