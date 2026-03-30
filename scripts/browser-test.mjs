@@ -123,6 +123,70 @@ export async function fetchPageContent(url, options = {}) {
 }
 
 // ---------------------------------------------------------------------------
+// Page structure analysis (for Plan 02 URL categorization)
+// ---------------------------------------------------------------------------
+
+/**
+ * Analyzes the DOM structure of a page to identify content containers and
+ * loading behavior differences across Unity's three documentation sources.
+ *
+ * @param {import('puppeteer').Page} page - The Puppeteer page object (already navigated)
+ * @returns {Promise<object>} Structure analysis results
+ */
+async function analyzePageStructure(page) {
+  return page.evaluate(() => {
+    const analysis = {
+      title: document.title,
+      hasMainContent: false,
+      contentSelectors: [],
+      loadingBehavior: 'static',
+      codeBlocks: 0,
+      links: 0,
+      images: 0,
+      headings: [],
+    };
+
+    // Check common content containers
+    const selectors = [
+      { sel: 'main', name: 'main' },
+      { sel: 'article', name: 'article' },
+      { sel: '.content', name: '.content' },
+      { sel: '.tutorial-content', name: '.tutorial-content' },
+      { sel: '.section-content', name: '.section-content' },
+      { sel: '#content-wrapper', name: '#content-wrapper' },
+      { sel: '.markdown', name: '.markdown' },
+    ];
+
+    for (const { sel, name } of selectors) {
+      if (document.querySelector(sel)) {
+        analysis.contentSelectors.push(name);
+        analysis.hasMainContent = true;
+      }
+    }
+
+    // Count structural elements
+    analysis.codeBlocks = document.querySelectorAll('pre, code').length;
+    analysis.links = document.querySelectorAll('a[href]').length;
+    analysis.images = document.querySelectorAll('img').length;
+
+    // Capture heading structure (first 10)
+    const headings = document.querySelectorAll('h1, h2, h3');
+    analysis.headings = Array.from(headings)
+      .slice(0, 10)
+      .map((h) => `${h.tagName}: ${h.textContent.trim().substring(0, 60)}`);
+
+    // Detect JS-heavy loading (SPA indicators)
+    if (document.querySelector('[data-reactroot]') || document.querySelector('#__next') || document.querySelector('#app')) {
+      analysis.loadingBehavior = 'SPA (JavaScript-rendered)';
+    } else if (document.querySelectorAll('script[src]').length > 10) {
+      analysis.loadingBehavior = 'JS-heavy';
+    }
+
+    return analysis;
+  });
+}
+
+// ---------------------------------------------------------------------------
 // Validation: test all three page types
 // ---------------------------------------------------------------------------
 
@@ -138,12 +202,35 @@ async function validatePages() {
 
   for (const [type, url] of Object.entries(TEST_URLS)) {
     console.log(`Testing ${type}: ${url}`);
+
+    // Fetch content
     const result = await fetchPageContent(url, { browser });
-    results.push({ type, ...result });
+
+    // Analyze page structure (separate page navigation for analysis)
+    let structure = null;
+    try {
+      const analysisPage = await browser.newPage();
+      await analysisPage.setUserAgent(
+        'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36'
+      );
+      await analysisPage.goto(url, { waitUntil: 'networkidle2', timeout: NAVIGATION_TIMEOUT_MS });
+      structure = await analyzePageStructure(analysisPage);
+      await analysisPage.close();
+    } catch {
+      structure = { error: 'Could not analyze structure' };
+    }
+
+    results.push({ type, ...result, structure });
 
     const status = result.success ? 'PASS' : 'FAIL';
     const detail = result.error || `${result.wordCount} words`;
-    console.log(`  ${status}: ${detail}\n`);
+    console.log(`  ${status}: ${detail}`);
+
+    if (structure && !structure.error) {
+      console.log(`  Structure: ${structure.loadingBehavior}, containers: [${structure.contentSelectors.join(', ')}]`);
+      console.log(`  Elements: ${structure.codeBlocks} code blocks, ${structure.links} links, ${structure.images} images`);
+    }
+    console.log();
   }
 
   await browser.close();
