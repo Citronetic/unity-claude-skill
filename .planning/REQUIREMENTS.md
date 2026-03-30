@@ -17,10 +17,10 @@
 ### Content Extraction
 
 - [ ] **EXTR-01**: All tutorial content pages are scraped with verified content (100% manifest coverage)
-- [ ] **EXTR-02**: Code blocks are preserved with proper formatting in extracted content
-- [ ] **EXTR-03**: Duplicate content across pathways is de-duplicated by canonical URL
-- [ ] **EXTR-04**: Extracted content is converted to clean Markdown (not raw HTML)
-- [ ] **EXTR-05**: Each extracted page is tagged with its Unity version
+- [x] **EXTR-02**: Code blocks are preserved with proper formatting in extracted content
+- [x] **EXTR-03**: Duplicate content across pathways is de-duplicated by canonical URL
+- [x] **EXTR-04**: Extracted content is converted to clean Markdown (not raw HTML)
+- [x] **EXTR-05**: Each extracted page is tagged with its Unity version
 
 ### Content Synthesis
 
@@ -161,10 +161,10 @@
 | SCRP-05 | Phase 1 | Complete |
 | SCRP-06 | Phase 1 | Complete |
 | EXTR-01 | Phase 2 | Pending |
-| EXTR-02 | Phase 2 | Pending |
-| EXTR-03 | Phase 2 | Pending |
-| EXTR-04 | Phase 2 | Pending |
-| EXTR-05 | Phase 2 | Pending |
+| EXTR-02 | Phase 2 | Complete |
+| EXTR-03 | Phase 2 | Complete |
+| EXTR-04 | Phase 2 | Complete |
+| EXTR-05 | Phase 2 | Complete |
 | SYNTH-01 | Phase 3 | Pending |
 | SYNTH-02 | Phase 3 | Pending |
 | SYNTH-03 | Phase 3 | Pending |
