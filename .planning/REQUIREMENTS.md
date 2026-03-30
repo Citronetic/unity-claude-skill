@@ -7,9 +7,9 @@
 
 ### Scraping Infrastructure
 
-- [ ] **SCRP-01**: Chrome DevTools MCP can navigate to Unity tutorial hub and render full page content
+- [x] **SCRP-01**: Chrome DevTools MCP can navigate to Unity tutorial hub and render full page content
 - [ ] **SCRP-02**: Complete URL tree of all tutorial pages is mapped into a scraping manifest
-- [ ] **SCRP-03**: Language/access behavior of unity.com/cn resolved with fallback to English site
+- [x] **SCRP-03**: Language/access behavior of unity.com/cn resolved with fallback to English site
 - [ ] **SCRP-04**: Scraping manifest tracks per-URL status (pending/scraped/verified/failed)
 - [ ] **SCRP-05**: Hidden content behind tabs/accordions is expanded before extraction
 - [ ] **SCRP-06**: Content verification confirms each page has >100 words of actual content
@@ -154,9 +154,9 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| SCRP-01 | Phase 1 | Pending |
+| SCRP-01 | Phase 1 | Complete |
 | SCRP-02 | Phase 1 | Pending |
-| SCRP-03 | Phase 1 | Pending |
+| SCRP-03 | Phase 1 | Complete |
 | SCRP-04 | Phase 1 | Pending |
 | SCRP-05 | Phase 1 | Pending |
 | SCRP-06 | Phase 1 | Pending |

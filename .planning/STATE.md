@@ -2,15 +2,15 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: planning
-stopped_at: Phase 1 context gathered
-last_updated: "2026-03-30T02:51:51.094Z"
-last_activity: 2026-03-29 -- Roadmap created (9 phases, 58 requirements mapped)
+status: executing
+stopped_at: Completed 01-01-PLAN.md
+last_updated: "2026-03-30T03:15:34.119Z"
+last_activity: 2026-03-30 -- Completed 01-01-PLAN (Chrome integration + CN site resolution)
 progress:
   total_phases: 9
   completed_phases: 0
-  total_plans: 0
-  completed_plans: 0
+  total_plans: 3
+  completed_plans: 1
   percent: 0
 ---
 
@@ -26,9 +26,9 @@ See: .planning/PROJECT.md (updated 2026-03-29)
 ## Current Position
 
 Phase: 1 of 9 (Scraping Infrastructure)
-Plan: 0 of TBD in current phase
-Status: Ready to plan
-Last activity: 2026-03-29 -- Roadmap created (9 phases, 58 requirements mapped)
+Plan: 1 of 3 in current phase
+Status: Executing
+Last activity: 2026-03-30 -- Completed 01-01-PLAN (Chrome integration + CN site resolution)
 
 Progress: [..........] 0%
 
@@ -50,6 +50,7 @@ Progress: [..........] 0%
 - Trend: -
 
 *Updated after each plan completion*
+| Phase 01 P01 | 14min | 2 tasks | 6 files |
 
 ## Accumulated Context
 
@@ -60,6 +61,9 @@ Recent decisions affecting current work:
 
 - [Roadmap]: 9 phases derived from 17 requirement categories; phases 6 and 7 can execute in parallel since both depend only on Phase 5
 - [Roadmap]: CN site access behavior flagged as first-action item in Phase 1; fallback to English site documented
+- [Phase 01]: Puppeteer is the required browser automation tool (learn.unity.com blocks curl via TLS fingerprinting)
+- [Phase 01]: CN site (unity.com/cn) deprioritized: returns 403 Access Denied. English sources confirmed as primary (learn.unity.com, docs.unity3d.com)
+- [Phase 01]: Unity tutorial URLs restructured -- URL discovery must use live link extraction, not hardcoded paths
 
 ### Pending Todos
 
@@ -72,6 +76,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-30T02:51:51.092Z
-Stopped at: Phase 1 context gathered
-Resume file: .planning/phases/01-scraping-infrastructure/01-CONTEXT.md
+Last session: 2026-03-30T03:15:34.118Z
+Stopped at: Completed 01-01-PLAN.md
+Resume file: None

@@ -171,7 +171,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 (and 7 in parallel) 
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Scraping Infrastructure | 0/3 | Planning | - |
+| 1. Scraping Infrastructure | 1/3 | In Progress | - |
 | 2. Content Extraction | 0/TBD | Not started | - |
 | 3. Content Synthesis | 0/TBD | Not started | - |
 | 4. Skill Foundation | 0/TBD | Not started | - |
