@@ -37,9 +37,9 @@ Decimal phases appear between their surrounding integers in numeric order.
 **Plans**: 3 plans
 
 Plans:
-- [ ] 01-01-PLAN.md -- Chrome integration setup and CN site language resolution
-- [ ] 01-02-PLAN.md -- URL tree discovery and manifest creation with status tracking
-- [ ] 01-03-PLAN.md -- Hidden content expansion and content verification pipeline
+- [x] 01-01-PLAN.md -- Chrome integration setup and CN site language resolution
+- [x] 01-02-PLAN.md -- URL tree discovery and manifest creation with status tracking
+- [x] 01-03-PLAN.md -- Hidden content expansion and content verification pipeline
 
 ### Phase 2: Content Extraction
 **Goal**: Every tutorial content page is scraped, converted to clean Markdown, and verified against the manifest
@@ -50,11 +50,11 @@ Plans:
   2. Extracted content is clean Markdown (not raw HTML) with properly formatted code blocks
   3. Duplicate pages across tutorial pathways are de-duplicated to a single canonical version
   4. Each extracted page file includes a Unity version tag
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 02-01: TBD
-- [ ] 02-02: TBD
+- [ ] 02-01-PLAN.md -- Batch extraction orchestrator with concurrency, throttling, dedup, and version tagging
+- [ ] 02-02-PLAN.md -- Full extraction run, verification reporting, and human quality check
 
 ### Phase 3: Content Synthesis
 **Goal**: Raw tutorial content is restructured from pedagogical walkthrough format into concise, actionable reference material verified against Unity 6.3
@@ -171,8 +171,8 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 (and 7 in parallel) 
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Scraping Infrastructure | 2/3 | Complete    | 2026-03-30 |
-| 2. Content Extraction | 0/TBD | Not started | - |
+| 1. Scraping Infrastructure | 3/3 | Complete    | 2026-03-30 |
+| 2. Content Extraction | 0/2 | Not started | - |
 | 3. Content Synthesis | 0/TBD | Not started | - |
 | 4. Skill Foundation | 0/TBD | Not started | - |
 | 5. Editor & Scripting Fundamentals | 0/TBD | Not started | - |
