@@ -25,10 +25,10 @@
 ### Content Synthesis
 
 - [ ] **SYNTH-01**: Tutorial prose is restructured into concise reference format
-- [ ] **SYNTH-02**: All API names are verified against Unity 6.3 scripting docs
-- [ ] **SYNTH-03**: Deprecated patterns are identified and replaced with current equivalents
+- [x] **SYNTH-02**: All API names are verified against Unity 6.3 scripting docs
+- [x] **SYNTH-03**: Deprecated patterns are identified and replaced with current equivalents
 - [ ] **SYNTH-04**: Code examples include using statements and class context
-- [ ] **SYNTH-05**: Content applies "only add what Claude doesn't already know" filter
+- [x] **SYNTH-05**: Content applies "only add what Claude doesn't already know" filter
 
 ### Skill Foundation
 
@@ -166,10 +166,10 @@
 | EXTR-04 | Phase 2 | Complete |
 | EXTR-05 | Phase 2 | Complete |
 | SYNTH-01 | Phase 3 | Pending |
-| SYNTH-02 | Phase 3 | Pending |
-| SYNTH-03 | Phase 3 | Pending |
+| SYNTH-02 | Phase 3 | Complete |
+| SYNTH-03 | Phase 3 | Complete |
 | SYNTH-04 | Phase 3 | Pending |
-| SYNTH-05 | Phase 3 | Pending |
+| SYNTH-05 | Phase 3 | Complete |
 | SKIL-01 | Phase 4 | Pending |
 | SKIL-02 | Phase 4 | Pending |
 | SKIL-03 | Phase 4 | Pending |
