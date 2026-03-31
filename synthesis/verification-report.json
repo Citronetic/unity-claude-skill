@@ -1,0 +1,766 @@
+{
+  "timestamp": "2026-03-31T17:37:24.523Z",
+  "summary": {
+    "api": {
+      "verified": 188,
+      "missing": 0,
+      "skipped": 80
+    },
+    "deprecated": {
+      "clean": 11,
+      "warnings": 19,
+      "errors": 0
+    },
+    "code": {
+      "complete": 79,
+      "missingUsing": 0,
+      "missingClass": 0,
+      "missingAnnotation": 0
+    }
+  },
+  "byFile": {
+    "animation.md": {
+      "api": {
+        "verified": [
+          "Awaitable",
+          "Animator.StringToHash",
+          "Animator",
+          "AudioSource",
+          "SpriteRenderer",
+          "StateMachineBehaviour"
+        ],
+        "missing": [],
+        "skipped": [
+          "Create",
+          "EnemyAI"
+        ],
+        "suggestions": {}
+      },
+      "deprecated": {
+        "status": "CLEAN",
+        "warnings": [],
+        "errors": []
+      },
+      "code": {
+        "complete": [
+          22,
+          70,
+          113,
+          154,
+          186
+        ],
+        "issues": []
+      }
+    },
+    "asset-pipeline.md": {
+      "api": {
+        "verified": [
+          "TextureImporter",
+          "AssetPostprocessor",
+          "Addressables.LoadAssetAsync",
+          "MyGame.Runtime",
+          "MyGame.Editor",
+          "MyGame.Tests"
+        ],
+        "missing": [],
+        "skipped": [
+          "Assets"
+        ],
+        "suggestions": {}
+      },
+      "deprecated": {
+        "status": "WARNING",
+        "warnings": [
+          {
+            "pattern": "Resources.Load()",
+            "note": "Mentioned with proper DON'T/deprecation context"
+          },
+          {
+            "pattern": "UPM_CACHE_PATH",
+            "note": "Mentioned with proper DON'T/deprecation context"
+          },
+          {
+            "pattern": "Resources.Load()",
+            "note": "Mentioned with proper DON'T/deprecation context"
+          }
+        ],
+        "errors": []
+      },
+      "code": {
+        "complete": [
+          83,
+          137,
+          176,
+          230
+        ],
+        "issues": []
+      }
+    },
+    "audio.md": {
+      "api": {
+        "verified": [
+          "AudioSource",
+          "AudioClip",
+          "AudioSource.PlayOneShot",
+          "UnityEngine.Audio",
+          "AudioSource.PlayClipAtPoint",
+          "AudioRolloffMode.Linear"
+        ],
+        "missing": [],
+        "skipped": [],
+        "suggestions": {}
+      },
+      "deprecated": {
+        "status": "CLEAN",
+        "warnings": [],
+        "errors": []
+      },
+      "code": {
+        "complete": [
+          22,
+          79,
+          118,
+          148,
+          175
+        ],
+        "issues": []
+      }
+    },
+    "build-deploy.md": {
+      "api": {
+        "verified": [
+          "BuildPlayerOptions",
+          "Addressables.LoadAssetAsync",
+          "BuildReport",
+          "UnityEditor.Build",
+          "BuildTarget.Android",
+          "BuildOptions.None",
+          "BuildPipeline.BuildPlayer",
+          "BuildTarget.WebGL",
+          "BuildResult.Succeeded",
+          "LogType.Error",
+          "SleepTimeout.NeverSleep",
+          "RuntimePlatform.Android",
+          "RuntimePlatform.IPhonePlayer",
+          "PlayerSettings.SetApplicationIdentifier",
+          "BuildTargetGroup.Android",
+          "PlayerSettings.Android",
+          "AndroidSdkVersions.AndroidApiLevel24",
+          "AndroidSdkVersions.AndroidApiLevelAuto",
+          "PlayerSettings.SetScriptingBackend",
+          "ScriptingImplementation.IL2CPP",
+          "AndroidArchitecture.ARM64",
+          "UnityEngine.AddressableAssets",
+          "UnityEngine.ResourceManagement",
+          "AsyncOperationStatus.Succeeded",
+          "Addressables.LoadSceneAsync",
+          "UnityEngine.SceneManagement",
+          "LoadSceneMode.Additive",
+          "Addressables.Release"
+        ],
+        "missing": [],
+        "skipped": [],
+        "suggestions": {}
+      },
+      "deprecated": {
+        "status": "CLEAN",
+        "warnings": [],
+        "errors": []
+      },
+      "code": {
+        "complete": [
+          22,
+          108,
+          137,
+          170,
+          243
+        ],
+        "issues": []
+      }
+    },
+    "cli-tools.md": {
+      "api": {
+        "verified": [],
+        "missing": [],
+        "skipped": [],
+        "suggestions": {}
+      },
+      "deprecated": {
+        "status": "CLEAN",
+        "warnings": [],
+        "errors": []
+      },
+      "code": {
+        "complete": [
+          71
+        ],
+        "issues": []
+      }
+    },
+    "editor-workflows.md": {
+      "api": {
+        "verified": [
+          "ProfilerMarker",
+          "SceneManager.LoadSceneAsync",
+          "FindObjectsSortMode",
+          "Awaitable",
+          "GUILayout.Button",
+          "Undo.RecordObject",
+          "SerializedPropertyType.Float",
+          "GUILayout.Label",
+          "Undo.RegisterCreatedObjectUndo",
+          "UnityEngine.SceneManagement",
+          "LoadSceneMode.Additive",
+          "Awaitable.NextFrameAsync",
+          "SceneManager.SetActiveScene",
+          "SceneManager.GetSceneByName",
+          "SceneManager.UnloadSceneAsync",
+          "Unity.Profiling",
+          "GameSimulation.Simulate",
+          "GameSimulation.Spawn"
+        ],
+        "missing": [],
+        "skipped": [
+          "SerializedProperty",
+          "FindObjectsOfType",
+          "FindObjectsByType",
+          "SceneReference",
+          "Debug.Log",
+          "EnemyConfig",
+          "RangeWithStepAttribute",
+          "WeaponData"
+        ],
+        "suggestions": {}
+      },
+      "deprecated": {
+        "status": "CLEAN",
+        "warnings": [],
+        "errors": []
+      },
+      "code": {
+        "complete": [
+          22,
+          52,
+          72,
+          111,
+          136,
+          160,
+          188
+        ],
+        "issues": []
+      }
+    },
+    "input-system.md": {
+      "api": {
+        "verified": [
+          "UnityEngine.InputSystem",
+          "InputAction.CallbackContext",
+          "Rigidbody2D",
+          "EnhancedTouchSupport.Enable",
+          "EnhancedTouch.Touch",
+          "EnhancedTouchSupport.Disable",
+          "UnityEngine.UI",
+          "InputActionRebindingExtensions.RebindingOperation",
+          "PlayerPrefs.SetString",
+          "InputControlPath.ToHumanReadableString",
+          "InputControlPath.HumanReadableStringOptions",
+          "PlayerPrefs"
+        ],
+        "missing": [],
+        "skipped": [
+          "Button",
+          "Value",
+          "PassThrough",
+          "InputAction",
+          "OnEnable",
+          "OnDisable",
+          "PlayerInput",
+          "Invoke"
+        ],
+        "suggestions": {}
+      },
+      "deprecated": {
+        "status": "CLEAN",
+        "warnings": [],
+        "errors": []
+      },
+      "code": {
+        "complete": [
+          20,
+          77,
+          115,
+          151,
+          184
+        ],
+        "issues": []
+      }
+    },
+    "mobile-platform.md": {
+      "api": {
+        "verified": [
+          "MaterialPropertyBlock",
+          "SleepTimeout.NeverSleep",
+          "ScreenOrientation.AutoRotation",
+          "RectTransform",
+          "UnityEngine.Rendering",
+          "QualityTier.High",
+          "QualityTier.Low",
+          "QualityTier.Medium",
+          "ShadowQuality.HardOnly",
+          "ShadowQuality.Disable",
+          "UnityEngine.Android",
+          "Permission.HasUserAuthorizedPermission",
+          "Permission.Camera",
+          "Permission.RequestUserPermission",
+          "Input.GetKeyDown",
+          "UnityEngine.Profiling",
+          "Profiler.GetTotalReservedMemoryLong",
+          "Profiler.GetTotalAllocatedMemoryLong",
+          "Resources.UnloadUnusedAssets",
+          "UnityEngine.InputSystem",
+          "EnhancedTouchSupport.Enable",
+          "EnhancedTouch.Touch",
+          "EnhancedTouchSupport.Disable",
+          "PlayerSettings.Android",
+          "AndroidArchitecture.ARM64",
+          "PlayerSettings.SetScriptingBackend",
+          "BuildTargetGroup.Android",
+          "ScriptingImplementation.IL2CPP",
+          "AndroidSdkVersions.AndroidApiLevel24",
+          "AndroidSdkVersions.AndroidApiLevelAuto"
+        ],
+        "missing": [],
+        "skipped": [
+          "ApplyMediumQuality",
+          "ApplyLowQuality",
+          "Medium",
+          "Low",
+          "F0"
+        ],
+        "suggestions": {}
+      },
+      "deprecated": {
+        "status": "CLEAN",
+        "warnings": [],
+        "errors": []
+      },
+      "code": {
+        "complete": [
+          22,
+          49,
+          94,
+          165,
+          206,
+          240,
+          298
+        ],
+        "issues": []
+      }
+    },
+    "physics.md": {
+      "api": {
+        "verified": [
+          "Rigidbody",
+          "Rigidbody2D",
+          "Collider2D",
+          "Physics.Raycast",
+          "Physics2D.Raycast",
+          "Physics.RaycastAll",
+          "Physics.RaycastNonAlloc",
+          "PhysicsShapeGroup2D",
+          "Input.GetAxisRaw",
+          "Input.GetButtonDown",
+          "Physics2D.OverlapCircle",
+          "ForceMode.Force",
+          "Physics2D.OverlapCircleAll",
+          "RaycastHit",
+          "BoxCollider2D",
+          "CircleCollider2D"
+        ],
+        "missing": [],
+        "skipped": [
+          "OnCollisionEnter2D",
+          "OnTriggerEnter2D",
+          "SetDensity",
+          "RaycastAll",
+          "AddForce",
+          "IsTrigger"
+        ],
+        "suggestions": {}
+      },
+      "deprecated": {
+        "status": "WARNING",
+        "warnings": [
+          {
+            "pattern": "Rigidbody.SetDensity",
+            "note": "Mentioned with proper DON'T/deprecation context"
+          },
+          {
+            "pattern": "Rigidbody.SetDensity",
+            "note": "Mentioned with proper DON'T/deprecation context"
+          }
+        ],
+        "errors": []
+      },
+      "code": {
+        "complete": [
+          22,
+          75,
+          120,
+          159,
+          187
+        ],
+        "issues": []
+      }
+    },
+    "project-setup.md": {
+      "api": {
+        "verified": [
+          "UnityEngine.SceneManagement",
+          "SceneManager.GetActiveScene",
+          "EditorBuildSettingsScene",
+          "SerializationMode.ForceText"
+        ],
+        "missing": [],
+        "skipped": [],
+        "suggestions": {}
+      },
+      "deprecated": {
+        "status": "CLEAN",
+        "warnings": [],
+        "errors": []
+      },
+      "code": {
+        "complete": [
+          85,
+          110
+        ],
+        "issues": []
+      }
+    },
+    "rendering-2d.md": {
+      "api": {
+        "verified": [
+          "MaterialPropertyBlock",
+          "TilemapCollider2D",
+          "CompositeCollider2D",
+          "Awaitable.WaitForSecondsAsync",
+          "SpriteRenderer",
+          "UnityEngine.Tilemaps",
+          "TileBase",
+          "Vector3Int",
+          "UnityEngine.Rendering"
+        ],
+        "missing": [],
+        "skipped": [
+          "Light2D",
+          "ShadowCaster2D",
+          "URP"
+        ],
+        "suggestions": {}
+      },
+      "deprecated": {
+        "status": "CLEAN",
+        "warnings": [],
+        "errors": []
+      },
+      "code": {
+        "complete": [
+          22,
+          71,
+          91,
+          137,
+          180,
+          211
+        ],
+        "issues": []
+      }
+    },
+    "rendering-3d.md": {
+      "api": {
+        "verified": [
+          "MaterialPropertyBlock",
+          "GraphicsFormat.DepthAuto",
+          "GraphicsFormat.None",
+          "SupportedOnRenderPipelineAttribute",
+          "UnityEngine.Rendering",
+          "CameraRenderType.Overlay",
+          "Shader.PropertyToID",
+          "Awaitable.NextFrameAsync",
+          "Lightmapping.BakeAsync",
+          "Lightmapping.Clear",
+          "Lightmapping.ClearLightingDataAsset"
+        ],
+        "missing": [],
+        "skipped": [
+          "SetupRenderPasses",
+          "RecordRenderGraph",
+          "OnDestroy",
+          "ShadowAuto",
+          "VideoAuto",
+          "CustomEditorForRenderPipelineAttribute",
+          "CustomEditor",
+          "Auto"
+        ],
+        "suggestions": {}
+      },
+      "deprecated": {
+        "status": "WARNING",
+        "warnings": [
+          {
+            "pattern": "SetupRenderPasses",
+            "note": "Mentioned with proper DON'T/deprecation context"
+          },
+          {
+            "pattern": "GraphicsFormat.DepthAuto",
+            "note": "Mentioned with proper DON'T/deprecation context"
+          },
+          {
+            "pattern": "CustomEditorForRenderPipelineAttribute",
+            "note": "Mentioned with proper DON'T/deprecation context"
+          },
+          {
+            "pattern": "_FORWARD_PLUS",
+            "note": "Mentioned with proper DON'T/deprecation context"
+          }
+        ],
+        "errors": []
+      },
+      "code": {
+        "complete": [
+          29,
+          69,
+          119,
+          146,
+          186,
+          219
+        ],
+        "issues": []
+      }
+    },
+    "scripting-fundamentals.md": {
+      "api": {
+        "verified": [
+          "UnityEngine.Object",
+          "FindObjectsSortMode",
+          "Awaitable",
+          "Physics2D.OverlapCircle",
+          "Input.GetAxisRaw",
+          "Rigidbody2D",
+          "FindObjectsSortMode.None",
+          "FindObjectsSortMode.InstanceID",
+          "RuntimeInitializeLoadType.BeforeSceneLoad",
+          "Resources.Load"
+        ],
+        "missing": [],
+        "skipped": [
+          "GetComponent",
+          "FindObjectsOfType",
+          "FindObjectsByType",
+          "FindObjectOfType",
+          "FindFirstObjectByType",
+          "FindAnyObjectByType",
+          "FindAny",
+          "SendMessage",
+          "Update",
+          "FixedUpdate",
+          "Use"
+        ],
+        "suggestions": {}
+      },
+      "deprecated": {
+        "status": "CLEAN",
+        "warnings": [],
+        "errors": []
+      },
+      "code": {
+        "complete": [
+          22,
+          60,
+          114,
+          158,
+          185,
+          209
+        ],
+        "issues": []
+      }
+    },
+    "scripting-patterns.md": {
+      "api": {
+        "verified": [
+          "Awaitable",
+          "UnityEngine.Pool",
+          "WWW",
+          "UnityWebRequest",
+          "PlayerPrefs",
+          "JsonUtility",
+          "UnityEngine.Events",
+          "Awaitable.WaitForSecondsAsync",
+          "Awaitable.BackgroundThreadAsync",
+          "Awaitable.MainThreadAsync"
+        ],
+        "missing": [],
+        "skipped": [
+          "StartCoroutine",
+          "IEnumerator",
+          "WaitForSeconds",
+          "WaitForEndOfFrame",
+          "WaitUntil",
+          "ObjectPool",
+          "CreateAssetMenu",
+          "OnDestroy",
+          "Thread",
+          "Assets"
+        ],
+        "suggestions": {}
+      },
+      "deprecated": {
+        "status": "WARNING",
+        "warnings": [
+          {
+            "pattern": "WWW",
+            "note": "Mentioned with proper DON'T/deprecation context"
+          },
+          {
+            "pattern": "PlayerPrefs",
+            "note": "Mentioned with proper DON'T/deprecation context"
+          }
+        ],
+        "errors": []
+      },
+      "code": {
+        "complete": [
+          20,
+          59,
+          104,
+          146,
+          194
+        ],
+        "issues": []
+      }
+    },
+    "testing.md": {
+      "api": {
+        "verified": [
+          "UnityEngine.TestRunner",
+          "UnityEditor.TestRunner",
+          "Awaitable",
+          "UnityEngine.TestUtils",
+          "Rigidbody2D",
+          "UnityEngine.SceneManagement",
+          "SceneManager.LoadScene",
+          "LoadSceneMode.Single"
+        ],
+        "missing": [],
+        "skipped": [
+          "DestroyImmediate",
+          "FindObjectsOfType",
+          "FindObjectsByType",
+          "FindFirstObjectByType",
+          "HealthData"
+        ],
+        "suggestions": {}
+      },
+      "deprecated": {
+        "status": "CLEAN",
+        "warnings": [],
+        "errors": []
+      },
+      "code": {
+        "complete": [
+          29,
+          84,
+          137,
+          161,
+          196,
+          212
+        ],
+        "issues": []
+      }
+    },
+    "ui-toolkit.md": {
+      "api": {
+        "verified": [
+          "UIDocument",
+          "VisualElement",
+          "TextField",
+          "Toggle",
+          "Slider",
+          "ScrollView",
+          "ListView",
+          "DropdownField",
+          "Foldout",
+          "MultiColumnListView",
+          "UnityEngine.UIElements",
+          "UnityEngine.SceneManagement",
+          "SceneManager.LoadScene",
+          "Application.Quit"
+        ],
+        "missing": [],
+        "skipped": [
+          "Label",
+          "Button",
+          "ProgressBar",
+          "OnGUI",
+          "UxmlTraits",
+          "UxmlFactory",
+          "ExecuteDefaultAction",
+          "HandleEventBubbleUp",
+          "PreventDefault",
+          "StopPropagation",
+          "OnEnable",
+          "OnDisable",
+          "AtTarget"
+        ],
+        "suggestions": {}
+      },
+      "deprecated": {
+        "status": "WARNING",
+        "warnings": [
+          {
+            "pattern": "ExecuteDefaultAction",
+            "note": "Mentioned with proper DON'T/deprecation context"
+          },
+          {
+            "pattern": "PreventDefault",
+            "note": "Mentioned with proper DON'T/deprecation context"
+          },
+          {
+            "pattern": "VisualElement.transform",
+            "note": "Mentioned with proper DON'T/deprecation context"
+          },
+          {
+            "pattern": "ExecuteDefaultAction",
+            "note": "Mentioned with proper DON'T/deprecation context"
+          },
+          {
+            "pattern": "PreventDefault",
+            "note": "Mentioned with proper DON'T/deprecation context"
+          },
+          {
+            "pattern": "VisualElement.transform",
+            "note": "Mentioned with proper DON'T/deprecation context"
+          },
+          {
+            "pattern": "UxmlTraits",
+            "note": "Mentioned with proper DON'T/deprecation context"
+          },
+          {
+            "pattern": "OnGUI()",
+            "note": "Mentioned with proper DON'T/deprecation context"
+          }
+        ],
+        "errors": []
+      },
+      "code": {
+        "complete": [
+          22,
+          111,
+          165,
+          199
+        ],
+        "issues": []
+      }
+    }
+  }
+}
