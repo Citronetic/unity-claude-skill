@@ -1,0 +1,110 @@
+This version of Unity is unsupported.
+
+
+
+# [Keyframe](Keyframe.html).value
+
+
+
+
+                  Leave feedback
+
+
+
+
+                  Suggest a change
+
+
+
+
+
+
+
+
+
+
+
+
+## Success!
+
+
+
+Thank you for helping us improve the quality of Unity Documentation. Although we cannot accept all submissions, we do read each suggested change from our users and will make updates where applicable.
+
+                      Close
+
+
+
+
+## Submission failed
+
+
+
+For some reason your suggested change could not be submitted. Please <a>try again</a> in a few minutes. And thank you for taking the time to help us improve the quality of Unity Documentation.
+
+                      Close
+
+
+                      Your name
+
+
+                      Your email
+
+
+                      Suggestion*
+
+                      Submit suggestion
+
+
+Cancel
+
+
+
+
+
+
+
+
+
+
+
+
+                    public float value;
+
+
+
+
+
+
+### Description
+
+
+
+The value of the curve at keyframe.
+
+
+
+
+
+In a 2D graph you could think of this as the y-value.
+
+Additional resources: [time](Keyframe-time.html).
+
+
+              
+
+
+```
+using UnityEngine;public class Example : MonoBehaviour
+{
+    void Start()
+    {
+        AnimationCurve curve = AnimationCurve.Linear(0, 0, 5, 5);
+        // Extract the time from the first keyframe of a curve
+        Debug.Log(curve[0].value);
+    }
+}
+```
+
+
+            

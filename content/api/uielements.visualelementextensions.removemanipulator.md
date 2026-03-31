@@ -1,0 +1,111 @@
+This version of Unity is unsupported.
+
+
+
+# [VisualElementExtensions](UIElements.VisualElementExtensions.html).RemoveManipulator
+
+
+
+
+                  Leave feedback
+
+
+
+
+                  Suggest a change
+
+
+
+
+
+
+
+
+
+
+
+
+## Success!
+
+
+
+Thank you for helping us improve the quality of Unity Documentation. Although we cannot accept all submissions, we do read each suggested change from our users and will make updates where applicable.
+
+                      Close
+
+
+
+
+## Submission failed
+
+
+
+For some reason your suggested change could not be submitted. Please <a>try again</a> in a few minutes. And thank you for taking the time to help us improve the quality of Unity Documentation.
+
+                      Close
+
+
+                      Your name
+
+
+                      Your email
+
+
+                      Suggestion*
+
+                      Submit suggestion
+
+
+Cancel
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Declaration
+
+public static void RemoveManipulator([UIElements.VisualElement](UIElements.VisualElement.html) ele,
+[UIElements.IManipulator](UIElements.IManipulator.html) manipulator);
+
+
+
+
+
+
+### Parameters
+
+
+
+| Parameter | Description |
+| --- | --- |
+| ele | VisualElement associated to the manipulator. |
+| manipulator | Manipulator to be removed from the VisualElement. |
+
+
+
+
+
+### Description
+
+
+
+Remove a manipulator associated to a VisualElement.
+
+
+
+
+
+For more information, refer to [Manipulators](../Manual/UIE-manipulators.html) in the User Manual.
+
+
+            

@@ -1,0 +1,117 @@
+This version of Unity is unsupported.
+
+
+
+# [Vector3Int](Vector3Int.html).operator +
+
+
+
+
+                  Leave feedback
+
+
+
+
+                  Suggest a change
+
+
+
+
+
+
+
+
+
+
+
+
+## Success!
+
+
+
+Thank you for helping us improve the quality of Unity Documentation. Although we cannot accept all submissions, we do read each suggested change from our users and will make updates where applicable.
+
+                      Close
+
+
+
+
+## Submission failed
+
+
+
+For some reason your suggested change could not be submitted. Please <a>try again</a> in a few minutes. And thank you for taking the time to help us improve the quality of Unity Documentation.
+
+                      Close
+
+
+                      Your name
+
+
+                      Your email
+
+
+                      Suggestion*
+
+                      Submit suggestion
+
+
+Cancel
+
+
+
+
+
+
+
+
+
+
+
+
+                    public static [Vector3Int](Vector3Int.html) operator +([Vector3Int](Vector3Int.html) a,
+[Vector3Int](Vector3Int.html) b);
+
+
+
+
+
+
+### Parameters
+
+
+
+| Parameter | Description |
+| --- | --- |
+| a | The first vector to add. |
+| b | The second vector to add. |
+
+
+
+
+
+### Returns
+
+
+
+**Vector3Int**
+        The resulting vector formed from component-wise addition of `a` and `b`.
+
+
+
+
+
+### Description
+
+
+
+Adds two vectors.
+
+
+
+
+
+This method adds the corresponding components of each vector together, to produce a new vector.
+
+
+            

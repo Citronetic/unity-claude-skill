@@ -1,0 +1,105 @@
+This version of Unity is unsupported.
+
+
+
+# [TreeView<T0>](IMGUI.Controls.TreeView_1.html).CanStartDrag
+
+
+
+
+                  Leave feedback
+
+
+
+
+                  Suggest a change
+
+
+
+
+
+
+
+
+
+
+
+
+## Success!
+
+
+
+Thank you for helping us improve the quality of Unity Documentation. Although we cannot accept all submissions, we do read each suggested change from our users and will make updates where applicable.
+
+                      Close
+
+
+
+
+## Submission failed
+
+
+
+For some reason your suggested change could not be submitted. Please <a>try again</a> in a few minutes. And thank you for taking the time to help us improve the quality of Unity Documentation.
+
+                      Close
+
+
+                      Your name
+
+
+                      Your email
+
+
+                      Suggestion*
+
+                      Submit suggestion
+
+
+Cancel
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Declaration
+
+protected bool CanStartDrag(CanStartDragArgs<TIdentifier> args);
+
+
+
+
+
+
+### Description
+
+
+
+This function is called whenever a TreeViewItem is clicked and dragged. It returns false by default.
+
+
+
+
+
+Override this function so it returns true to enable drag and drop behavior for TreeViewItems.
+
+You control TreeView drag and drop in the following order:
+
+1) override [CanStartDrag](IMGUI.Controls.TreeView_1.CanStartDrag.html) to enable dragging TreeViewItems.
+
+2) override [SetupDragAndDrop](IMGUI.Controls.TreeView_1.SetupDragAndDrop.html) to set which TreeViewItems are dragged.
+
+3) override [HandleDragAndDrop](IMGUI.Controls.TreeView_1.HandleDragAndDrop.html) to control the drag and drop behavior of the TreeView.
+
+
+            

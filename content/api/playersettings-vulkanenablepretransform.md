@@ -1,0 +1,94 @@
+This version of Unity is unsupported.
+
+
+
+# [PlayerSettings](PlayerSettings.html).vulkanEnablePreTransform
+
+
+
+
+                  Leave feedback
+
+
+
+
+                  Suggest a change
+
+
+
+
+
+
+
+
+
+
+
+
+## Success!
+
+
+
+Thank you for helping us improve the quality of Unity Documentation. Although we cannot accept all submissions, we do read each suggested change from our users and will make updates where applicable.
+
+                      Close
+
+
+
+
+## Submission failed
+
+
+
+For some reason your suggested change could not be submitted. Please <a>try again</a> in a few minutes. And thank you for taking the time to help us improve the quality of Unity Documentation.
+
+                      Close
+
+
+                      Your name
+
+
+                      Your email
+
+
+                      Suggestion*
+
+                      Submit suggestion
+
+
+Cancel
+
+
+
+
+                [Switch to Manual](../Manual/class-PlayerSettings.html)
+
+
+
+
+
+
+
+                    public static bool vulkanEnablePreTransform;
+
+
+
+
+
+
+### Description
+
+
+
+Applies the display rotation during rendering.
+
+
+
+
+
+When this option is enabled, Unity rotates your content when rendering to the framebuffer. Most Android phones typically use portrait as their native display orientation. If your application needs to display in a different orientation, content rotation occurs in a separate step. The operating system performs the rotation using the GPU or dedicated hardware.
+
+**Note:** this setting is only supported by Android and has no effect on other platforms.
+
+
+            

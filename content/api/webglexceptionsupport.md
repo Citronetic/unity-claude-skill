@@ -1,0 +1,105 @@
+This version of Unity is unsupported.
+
+
+
+# WebGLExceptionSupport
+
+
+
+
+
+enumeration
+
+
+                  Leave feedback
+
+
+
+
+                  Suggest a change
+
+
+
+
+
+
+
+
+
+
+
+
+## Success!
+
+
+
+Thank you for helping us improve the quality of Unity Documentation. Although we cannot accept all submissions, we do read each suggested change from our users and will make updates where applicable.
+
+                      Close
+
+
+
+
+## Submission failed
+
+
+
+For some reason your suggested change could not be submitted. Please <a>try again</a> in a few minutes. And thank you for taking the time to help us improve the quality of Unity Documentation.
+
+                      Close
+
+
+                      Your name
+
+
+                      Your email
+
+
+                      Suggestion*
+
+                      Submit suggestion
+
+
+Cancel
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### Description
+
+
+
+Options for Exception support in WebGL.
+
+
+
+
+
+### Properties
+
+
+
+| Property | Description |
+| --- | --- |
+| None | Disable exception support. |
+| ExplicitlyThrownExceptionsOnly | Enable throw support. |
+| FullWithoutStacktrace | Enable exception support for all exceptions, without stack trace information. |
+| FullWithStacktrace | Enable exception support for all exceptions, including stack trace information. |
+
+
+            

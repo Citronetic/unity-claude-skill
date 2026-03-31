@@ -1,0 +1,204 @@
+This version of Unity is unsupported.
+
+
+
+# [RenderPipeline](Rendering.RenderPipeline.html).SubmitRenderRequest
+
+
+
+
+                  Leave feedback
+
+
+
+
+                  Suggest a change
+
+
+
+
+
+
+
+
+
+
+
+
+## Success!
+
+
+
+Thank you for helping us improve the quality of Unity Documentation. Although we cannot accept all submissions, we do read each suggested change from our users and will make updates where applicable.
+
+                      Close
+
+
+
+
+## Submission failed
+
+
+
+For some reason your suggested change could not be submitted. Please <a>try again</a> in a few minutes. And thank you for taking the time to help us improve the quality of Unity Documentation.
+
+                      Close
+
+
+                      Your name
+
+
+                      Your email
+
+
+                      Suggestion*
+
+                      Submit suggestion
+
+
+Cancel
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Declaration
+
+public static void SubmitRenderRequest([Camera](Camera.html) camera,
+RequestData data);
+
+
+
+
+
+
+### Parameters
+
+
+
+| Parameter | Description |
+| --- | --- |
+| camera | The camera to render the request. |
+| data | All the necessary destination information to render a request, for example render destination, mipmap level, slice index, and so on. This information varies based on the RequestData type. |
+
+
+
+
+
+### Description
+
+
+
+Submits a render request to a camera using the render pipeline, outside of the Unity render loop.
+
+
+
+
+
+Call this method or [Camera.SubmitRenderRequest](Camera.SubmitRenderRequest.html) to render the selected camera with the render pipeline to the render destination specified in the `RequestData` parameter. Before submitting the request, use [RenderPipeline.SupportsRenderRequest](Rendering.RenderPipeline.SupportsRenderRequest.html) to verify that the render pipeline supports the `RequestData` type you have selected. The request is processed sequentially within your script, and no callback mechanism is involved.
+
+The Universal Render Pipeline (URP) supports the following `RequestData` types:
+
+
+
+          - [StandardRequest](Rendering.RenderPipeline.StandardRequest.html) renders a complete camera stack and outputs the result to the specified target. This request is only applicable to Base Cameras.
+
+          - [ObjectIdRequest](Rendering.ObjectIdRequest.html) renders the object ID in each pixel and outputs the result to the specified target. This request is only supported in the Editor.
+
+          - [UniversalRenderPipeline.SingleCameraRequest](https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@latest/index.html?subfolder=/api/UnityEngine.Rendering.Universal.UniversalRenderPipeline.SingleCameraRequest.html) renders a single camera and outputs the result to the specified target. This request is only applicable to Base Cameras.
+
+
+
+
+
+The High Definition Render Pipeline (HDRP) supports the following `RequestData` types:
+
+
+
+          - [StandardRequest](Rendering.RenderPipeline.StandardRequest.html) renders a camera without [Arbitrary Output Variables](https://docs.unity3d.com/Packages/com.unity.render-pipelines.high-definition@latest/index.html?subfolder=/manual/AOVs.html) (AOVs) and outputs the result to the specified target. It uses a separate camera history from the render loop, to ensure temporal effects are consistent.
+
+          - [ObjectIdRequest](Rendering.ObjectIdRequest.html) renders the object ID to each corresponding pixel and outputs the result to the given target. Only supported in the editor.
+
+
+
+
+
+The Built-In Render Pipeline supports only the [ObjectIdRequest](Rendering.ObjectIdRequest.html) request type.
+
+For more information about how to render a render request in URP, refer to [Create a Render Request in URP](../Manual/urp/User-Render-Requests.html).
+
+
+              
+
+
+```
+// This example sends render requests when the GUI button "Render Request" is selected.
+// To use it, attach the script to a camera and select Enter Play Mode.using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.Rendering;[RequireComponent(typeof(Camera))]
+public class StandardRenderRequest : MonoBehaviour
+{
+    [SerializeField]
+    RenderTexture texture2D, texture2DArray, cubeMap, texture3D;    // Create a button you can use to send a render request
+    private void OnGUI()
+    {
+        GUILayout.BeginVertical();
+        if (GUILayout.Button("Render Request"))
+        {
+            SendRenderRequests();
+        }
+        GUILayout.EndVertical();
+    }    // Send render requests outside of Unity render loop
+    void SendRenderRequests()
+    {
+        Camera camera = GetComponent<Camera>();        // Create a standard request. This is supported only in HDRP and URP.
+        RenderPipeline.StandardRequest request = new RenderPipeline.StandardRequest();        // Check if the request is supported by the render pipeline
+        if (RenderPipeline.SupportsRenderRequest(camera, request))
+        {
+            // Submit the render request to the render pipeline with different destination textures            // Render to a 2D texture
+            request.destination = texture2D;            // Render the camera, and fill the 2D texture with its view
+            RenderPipeline.SubmitRenderRequest(camera, request);            // Render to a 2D texture array
+            request.destination = texture2DArray;
+            for (int i = 0; i < texture2DArray.volumeDepth; i++)
+            {
+                request.slice = i;
+                // Render the camera and fill slice i of the 2D texture array with its view
+                RenderPipeline.SubmitRenderRequest(camera, request);
+            }            // Render to a cubemap texture
+            var faces = new[] {
+                CubemapFace.NegativeX, CubemapFace.PositiveX,
+                CubemapFace.NegativeY, CubemapFace.PositiveY,
+                CubemapFace.NegativeZ, CubemapFace.PositiveZ
+            };
+            request.destination = cubeMap;
+            foreach (var face in faces)
+            {
+                request.face = face;
+                // Render the camera and fill each face of the cubemap texture with its view
+                RenderPipeline.SubmitRenderRequest(camera, request);
+            }            // Render to a 3D texture
+            request.destination = texture3D;
+            for (int i = 0; i < texture3D.volumeDepth; i++)
+            {
+                request.slice = i;
+                // Render the camera and fill slice i of the 3D texture with its view
+                RenderPipeline.SubmitRenderRequest(camera, request);
+            }
+        }
+    }
+}
+```
+
+
+            

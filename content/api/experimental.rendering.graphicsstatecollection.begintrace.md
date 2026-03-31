@@ -1,0 +1,129 @@
+This version of Unity is unsupported.
+
+
+                  **Experimental**: this API is experimental and might be changed or removed in the future.
+
+
+# [GraphicsStateCollection](Experimental.Rendering.GraphicsStateCollection.html).BeginTrace
+
+
+
+
+                  Leave feedback
+
+
+
+
+                  Suggest a change
+
+
+
+
+
+
+
+
+
+
+
+
+## Success!
+
+
+
+Thank you for helping us improve the quality of Unity Documentation. Although we cannot accept all submissions, we do read each suggested change from our users and will make updates where applicable.
+
+                      Close
+
+
+
+
+## Submission failed
+
+
+
+For some reason your suggested change could not be submitted. Please <a>try again</a> in a few minutes. And thank you for taking the time to help us improve the quality of Unity Documentation.
+
+                      Close
+
+
+                      Your name
+
+
+                      Your email
+
+
+                      Suggestion*
+
+                      Submit suggestion
+
+
+Cancel
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Declaration
+
+public bool BeginTrace();
+
+
+
+
+
+
+### Returns
+
+
+
+**bool**
+        Returns true if tracing successfully started, false otherwise.
+
+
+
+
+
+### Description
+
+
+
+Start tracing shader variants and graphics states encountered at runtime.
+
+
+
+
+
+Graphics states will only be traced when [SystemInfo.supportsParallelPSOCreation](SystemInfo-supportsParallelPSOCreation.html) is true.
+
+
+              
+
+
+```
+using UnityEngine;
+using UnityEngine.Experimental.Rendering;public class BeginTraceExample : MonoBehaviour
+{
+    public GraphicsStateCollection graphicsStateCollection;    void Start()
+    {
+        graphicsStateCollection = new GraphicsStateCollection();
+        graphicsStateCollection.BeginTrace();
+    }    void OnDestroy()
+    {
+        graphicsStateCollection.EndTrace();
+    }
+}
+```
+
+
+            

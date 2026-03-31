@@ -1,0 +1,92 @@
+This version of Unity is unsupported.
+
+
+
+# [InteractionMode](InteractionMode.html).UserAction
+
+
+
+
+                  Leave feedback
+
+
+
+
+                  Suggest a change
+
+
+
+
+
+
+
+
+
+
+
+
+## Success!
+
+
+
+Thank you for helping us improve the quality of Unity Documentation. Although we cannot accept all submissions, we do read each suggested change from our users and will make updates where applicable.
+
+                      Close
+
+
+
+
+## Submission failed
+
+
+
+For some reason your suggested change could not be submitted. Please <a>try again</a> in a few minutes. And thank you for taking the time to help us improve the quality of Unity Documentation.
+
+                      Close
+
+
+                      Your name
+
+
+                      Your email
+
+
+                      Suggestion*
+
+                      Submit suggestion
+
+
+Cancel
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### Description
+
+
+
+Use this setting to allow a method to show dialog boxes to the user, and to allow it to record to the undo history.
+
+
+
+
+
+You can only use this setting with methods that accept an [InteractionMode](InteractionMode.html) parameter.
+
+
+            

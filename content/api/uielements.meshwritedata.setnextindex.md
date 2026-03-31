@@ -1,0 +1,115 @@
+This version of Unity is unsupported.
+
+
+
+# [MeshWriteData](UIElements.MeshWriteData.html).SetNextIndex
+
+
+
+
+                  Leave feedback
+
+
+
+
+                  Suggest a change
+
+
+
+
+
+
+
+
+
+
+
+
+## Success!
+
+
+
+Thank you for helping us improve the quality of Unity Documentation. Although we cannot accept all submissions, we do read each suggested change from our users and will make updates where applicable.
+
+                      Close
+
+
+
+
+## Submission failed
+
+
+
+For some reason your suggested change could not be submitted. Please <a>try again</a> in a few minutes. And thank you for taking the time to help us improve the quality of Unity Documentation.
+
+                      Close
+
+
+                      Your name
+
+
+                      Your email
+
+
+                      Suggestion*
+
+                      Submit suggestion
+
+
+Cancel
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Declaration
+
+public void SetNextIndex(ushort index);
+
+
+
+
+
+
+### Parameters
+
+
+
+| Parameter | Description |
+| --- | --- |
+| index | The value of the next index. |
+
+
+
+
+
+### Description
+
+
+
+Assigns the value of the next index of the allocated indices list.
+
+
+
+
+
+Used to iteratively fill the values of the allocated indices via repeated calls to this function until all values have been provided. This way of filling index data is mutually exclusive with the use of SetAllIndices.
+ After each invocation to this function, the internal counter for the next index is automatically incremented.
+ When this method is called, it is not possible to use SetAllIndices to fill the indices.
+ The index values provided refer directly to the vertices allocated in the same [MeshWriteData](UIElements.MeshWriteData.html) object. Thus, an index of 0 means the first vertex and index 1 means the second vertex and so on.
+
+
+ Note that calling SetNextIndex fewer times than the allocated number of indices will leave the remaining indices with random values as [MeshGenerationContext.Allocate](UIElements.MeshGenerationContext.Allocate.html) does not initialize the returned data to 0 to avoid redundant work.
+
+
+            

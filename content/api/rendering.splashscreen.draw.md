@@ -1,0 +1,115 @@
+This version of Unity is unsupported.
+
+
+
+# [SplashScreen](Rendering.SplashScreen.html).Draw
+
+
+
+
+                  Leave feedback
+
+
+
+
+                  Suggest a change
+
+
+
+
+
+
+
+
+
+
+
+
+## Success!
+
+
+
+Thank you for helping us improve the quality of Unity Documentation. Although we cannot accept all submissions, we do read each suggested change from our users and will make updates where applicable.
+
+                      Close
+
+
+
+
+## Submission failed
+
+
+
+For some reason your suggested change could not be submitted. Please <a>try again</a> in a few minutes. And thank you for taking the time to help us improve the quality of Unity Documentation.
+
+                      Close
+
+
+                      Your name
+
+
+                      Your email
+
+
+                      Suggestion*
+
+                      Submit suggestion
+
+
+Cancel
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Declaration
+
+public static void Draw();
+
+
+
+
+
+
+### Description
+
+
+
+Immediately draws the splash screen. Ensure you have called [SplashScreen.Begin](Rendering.SplashScreen.Begin.html) before you start calling this.
+
+
+              
+
+
+```
+using System.Collections;
+using UnityEngine;
+using UnityEngine.Rendering;// This example shows how you could draw the splash screen at the start of a Scene. This is a good way to integrate the splash screen with your own or add extras such as Audio.
+public class SplashScreenExample : MonoBehaviour
+{
+    IEnumerator Start()
+    {
+        Debug.Log("Showing splash screen");
+        SplashScreen.Begin();
+        while (!SplashScreen.isFinished)
+        {
+            SplashScreen.Draw();
+            yield return null;
+        }
+        Debug.Log("Finished showing splash screen");
+    }
+}
+```
+
+
+            

@@ -1,0 +1,93 @@
+This version of Unity is unsupported.
+
+
+
+# [ParticleSystemForceField](ParticleSystemForceField.html).multiplyDragByParticleVelocity
+
+
+
+
+                  Leave feedback
+
+
+
+
+                  Suggest a change
+
+
+
+
+
+
+
+
+
+
+
+
+## Success!
+
+
+
+Thank you for helping us improve the quality of Unity Documentation. Although we cannot accept all submissions, we do read each suggested change from our users and will make updates where applicable.
+
+                      Close
+
+
+
+
+## Submission failed
+
+
+
+For some reason your suggested change could not be submitted. Please <a>try again</a> in a few minutes. And thank you for taking the time to help us improve the quality of Unity Documentation.
+
+                      Close
+
+
+                      Your name
+
+
+                      Your email
+
+
+                      Suggestion*
+
+                      Submit suggestion
+
+
+Cancel
+
+
+
+
+                [Switch to Manual](../Manual/class-ParticleSystemForceField.html)
+
+
+
+
+
+
+
+                    public bool multiplyDragByParticleVelocity;
+
+
+
+
+
+
+### Description
+
+
+
+When using Drag, the drag strength will be multiplied by the speed of the particles if this toggle is enabled.
+
+
+
+
+
+Enabling this value results in a more physically accurate drag simulation.
+Additional resources: [ParticleSystemForceField.drag](ParticleSystemForceField-drag.html), [ParticleSystemForceField](ParticleSystemForceField.html).
+
+
+            

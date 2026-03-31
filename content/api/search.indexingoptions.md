@@ -1,0 +1,109 @@
+This version of Unity is unsupported.
+
+
+
+# IndexingOptions
+
+
+
+
+
+enumeration
+
+
+                  Leave feedback
+
+
+
+
+                  Suggest a change
+
+
+
+
+
+
+
+
+
+
+
+
+## Success!
+
+
+
+Thank you for helping us improve the quality of Unity Documentation. Although we cannot accept all submissions, we do read each suggested change from our users and will make updates where applicable.
+
+                      Close
+
+
+
+
+## Submission failed
+
+
+
+For some reason your suggested change could not be submitted. Please <a>try again</a> in a few minutes. And thank you for taking the time to help us improve the quality of Unity Documentation.
+
+                      Close
+
+
+                      Your name
+
+
+                      Your email
+
+
+                      Suggestion*
+
+                      Submit suggestion
+
+
+Cancel
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### Description
+
+
+
+Use Indexing options to specify the contents of your search index.
+
+
+
+
+
+### Properties
+
+
+
+| Property | Description |
+| --- | --- |
+| None | Do not include additional indexing options. |
+| Types | Include additional types of information in your Asset index. |
+| Properties | Include Asset serialized properties in your index. |
+| Extended | Include extended information in your index such as sub objects in Scene and Prefab Assets. |
+| Dependencies | Include Asset dependencies in your index. |
+| Keep | Use this option to save the created index as an Asset file. |
+| Temporary | Save the search index to a temporary folder that is not managed by Unity. |
+| All | Apply all indexing options. |
+
+
+            

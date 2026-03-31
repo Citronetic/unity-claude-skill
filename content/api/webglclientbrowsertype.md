@@ -1,0 +1,113 @@
+This version of Unity is unsupported.
+
+
+
+# WebGLClientBrowserType
+
+
+
+
+
+enumeration
+
+
+                  Leave feedback
+
+
+
+
+                  Suggest a change
+
+
+
+
+
+
+
+
+
+
+
+
+## Success!
+
+
+
+Thank you for helping us improve the quality of Unity Documentation. Although we cannot accept all submissions, we do read each suggested change from our users and will make updates where applicable.
+
+                      Close
+
+
+
+
+## Submission failed
+
+
+
+For some reason your suggested change could not be submitted. Please <a>try again</a> in a few minutes. And thank you for taking the time to help us improve the quality of Unity Documentation.
+
+                      Close
+
+
+                      Your name
+
+
+                      Your email
+
+
+                      Suggestion*
+
+                      Submit suggestion
+
+
+Cancel
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### Description
+
+
+
+An enum containing the supported client web browsers.
+
+
+
+
+
+This enum is used within the WebGL platform to determine which browser to load the web application on.
+
+
+
+
+
+### Properties
+
+
+
+| Property | Description |
+| --- | --- |
+| Default | The system's default browser will be launched for the web application. |
+| Edge | An instance of the Microsoft Edge browser will be launched for the web application. |
+| Safari | An instance of the Apple Safari browser will be launched for the web application. |
+| Firefox | An instance of the Mozilla Firefox browser will be launched for the web application. |
+| Chrome | An instance of the Google Chrome browser will be launched for the web application. |
+| Chromium | An instance of a Chromium browser will be launched for the web application. |
+
+
+            

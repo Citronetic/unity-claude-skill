@@ -1,0 +1,92 @@
+This version of Unity is unsupported.
+
+
+
+# [AsyncReadManagerRequestMetric](Unity.IO.LowLevel.Unsafe.AsyncReadManagerRequestMetric.html).Subsystem
+
+
+
+
+                  Leave feedback
+
+
+
+
+                  Suggest a change
+
+
+
+
+
+
+
+
+
+
+
+
+## Success!
+
+
+
+Thank you for helping us improve the quality of Unity Documentation. Although we cannot accept all submissions, we do read each suggested change from our users and will make updates where applicable.
+
+                      Close
+
+
+
+
+## Submission failed
+
+
+
+For some reason your suggested change could not be submitted. Please <a>try again</a> in a few minutes. And thank you for taking the time to help us improve the quality of Unity Documentation.
+
+                      Close
+
+
+                      Your name
+
+
+                      Your email
+
+
+                      Suggestion*
+
+                      Submit suggestion
+
+
+Cancel
+
+
+
+
+
+
+
+
+
+
+
+
+                    public [Unity.IO.LowLevel.Unsafe.AssetLoadingSubsystem](Unity.IO.LowLevel.Unsafe.AssetLoadingSubsystem.html) Subsystem;
+
+
+
+
+
+
+### Description
+
+
+
+The [Subsystem tag](Unity.IO.LowLevel.Unsafe.AssetLoadingSubsystem.html) assigned to the read operation.
+
+
+
+
+
+You can assign a subsystem tag to a read operation using the `subsystem` parameter of the [AsyncReadManager.Read](Unity.IO.LowLevel.Unsafe.AsyncReadManager.Read.html) function.
+
+
+            

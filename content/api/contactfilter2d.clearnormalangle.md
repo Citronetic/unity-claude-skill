@@ -1,0 +1,91 @@
+This version of Unity is unsupported.
+
+
+
+# [ContactFilter2D](ContactFilter2D.html).ClearNormalAngle
+
+
+
+
+                  Leave feedback
+
+
+
+
+                  Suggest a change
+
+
+
+
+
+
+
+
+
+
+
+
+## Success!
+
+
+
+Thank you for helping us improve the quality of Unity Documentation. Although we cannot accept all submissions, we do read each suggested change from our users and will make updates where applicable.
+
+                      Close
+
+
+
+
+## Submission failed
+
+
+
+For some reason your suggested change could not be submitted. Please <a>try again</a> in a few minutes. And thank you for taking the time to help us improve the quality of Unity Documentation.
+
+                      Close
+
+
+                      Your name
+
+
+                      Your email
+
+
+                      Suggestion*
+
+                      Submit suggestion
+
+
+Cancel
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Declaration
+
+public void ClearNormalAngle();
+
+
+
+
+
+
+### Description
+
+
+
+Turns off normal angle filtering by setting [useNormalAngle](ContactFilter2D-useNormalAngle.html) to false. The associated values of [minNormalAngle](ContactFilter2D-minNormalAngle.html) and [maxNormalAngle](ContactFilter2D-maxNormalAngle.html) are not changed.
+
+
+            

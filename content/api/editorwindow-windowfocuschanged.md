@@ -1,0 +1,123 @@
+This version of Unity is unsupported.
+
+
+
+# [EditorWindow](EditorWindow.html).windowFocusChanged
+
+
+
+
+                  Leave feedback
+
+
+
+
+                  Suggest a change
+
+
+
+
+
+
+
+
+
+
+
+
+## Success!
+
+
+
+Thank you for helping us improve the quality of Unity Documentation. Although we cannot accept all submissions, we do read each suggested change from our users and will make updates where applicable.
+
+                      Close
+
+
+
+
+## Submission failed
+
+
+
+For some reason your suggested change could not be submitted. Please <a>try again</a> in a few minutes. And thank you for taking the time to help us improve the quality of Unity Documentation.
+
+                      Close
+
+
+                      Your name
+
+
+                      Your email
+
+
+                      Suggestion*
+
+                      Submit suggestion
+
+
+Cancel
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### Description
+
+
+
+Called whenever the focused editor window is changed.
+
+
+              
+
+
+```
+using UnityEditor;
+using UnityEngine;
+using UnityEngine.UIElements;
+
+public class FocusedWindowTracker : EditorWindow
+{
+    [MenuItem("Window/Focused Window Tracker")]
+    private static void ShowTracker() => GetWindow<FocusedWindowTracker>();
+
+    private void CreateGUI()
+    {
+        var label = new Label("I'm logging every focused window");
+        rootVisualElement.Add(label);
+    }
+
+    private void OnEnable()
+    {
+        EditorWindow.windowFocusChanged += TrackFocusedWindow;
+    }
+
+    private void OnDisable()
+    {
+        EditorWindow.windowFocusChanged -= TrackFocusedWindow;
+    }
+
+    private static void TrackFocusedWindow()
+    {
+        Debug.Log($"Current focused window is {focusedWindow.titleContent.text}.");
+    }
+}
+```
+
+
+            

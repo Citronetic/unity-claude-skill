@@ -1,0 +1,120 @@
+This version of Unity is unsupported.
+
+
+
+# [PrefabStage](SceneManagement.PrefabStage.html).IsPartOfPrefabContents
+
+
+
+
+                  Leave feedback
+
+
+
+
+                  Suggest a change
+
+
+
+
+
+
+
+
+
+
+
+
+## Success!
+
+
+
+Thank you for helping us improve the quality of Unity Documentation. Although we cannot accept all submissions, we do read each suggested change from our users and will make updates where applicable.
+
+                      Close
+
+
+
+
+## Submission failed
+
+
+
+For some reason your suggested change could not be submitted. Please <a>try again</a> in a few minutes. And thank you for taking the time to help us improve the quality of Unity Documentation.
+
+                      Close
+
+
+                      Your name
+
+
+                      Your email
+
+
+                      Suggestion*
+
+                      Submit suggestion
+
+
+Cancel
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Declaration
+
+public bool IsPartOfPrefabContents([GameObject](GameObject.html) gameObject);
+
+
+
+
+
+
+### Parameters
+
+
+
+| Parameter | Description |
+| --- | --- |
+| gameObject | The GameObject to check. |
+
+
+
+
+
+### Returns
+
+
+
+**bool**
+        True if the GameObject is part of the Prefab contents.
+
+
+
+
+
+### Description
+
+
+
+Returns true if the given GameObject is part of the loaded Prefab Asset contents in the Prefab stage.
+
+
+
+
+
+Returns false for GameObjects that are part of the editing environment in the Prefab stage, or not part of the Prefab stage at all.
+
+
+            

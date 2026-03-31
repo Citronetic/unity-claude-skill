@@ -1,0 +1,113 @@
+This version of Unity is unsupported.
+
+
+
+# CompilerMessage
+
+
+
+
+
+struct in
+          UnityEditor.Compilation
+
+
+                  Leave feedback
+
+
+
+
+                  Suggest a change
+
+
+
+
+
+
+
+
+
+
+
+
+## Success!
+
+
+
+Thank you for helping us improve the quality of Unity Documentation. Although we cannot accept all submissions, we do read each suggested change from our users and will make updates where applicable.
+
+                      Close
+
+
+
+
+## Submission failed
+
+
+
+For some reason your suggested change could not be submitted. Please <a>try again</a> in a few minutes. And thank you for taking the time to help us improve the quality of Unity Documentation.
+
+                      Close
+
+
+                      Your name
+
+
+                      Your email
+
+
+                      Suggestion*
+
+                      Submit suggestion
+
+
+Cancel
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### Description
+
+
+
+Compiler Message.
+
+
+
+
+
+Additional resources: AssemblyBuilder.
+
+
+
+
+
+### Properties
+
+
+
+| Property | Description |
+| --- | --- |
+| column | Line column for the message. |
+| file | File for the message. |
+| line | File line for the message. |
+| message | Compiler message. |
+| type | Message type. |
+
+
+            

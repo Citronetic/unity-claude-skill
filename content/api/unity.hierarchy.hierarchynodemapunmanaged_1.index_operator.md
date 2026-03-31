@@ -1,0 +1,109 @@
+This version of Unity is unsupported.
+
+
+
+# [HierarchyNodeMapUnmanaged<T0>](Unity.Hierarchy.HierarchyNodeMapUnmanaged_1.html).this[HierarchyNode]
+
+
+
+
+                  Leave feedback
+
+
+
+
+                  Suggest a change
+
+
+
+
+
+
+
+
+
+
+
+
+## Success!
+
+
+
+Thank you for helping us improve the quality of Unity Documentation. Although we cannot accept all submissions, we do read each suggested change from our users and will make updates where applicable.
+
+                      Close
+
+
+
+
+## Submission failed
+
+
+
+For some reason your suggested change could not be submitted. Please <a>try again</a> in a few minutes. And thank you for taking the time to help us improve the quality of Unity Documentation.
+
+                      Close
+
+
+                      Your name
+
+
+                      Your email
+
+
+                      Suggestion*
+
+                      Submit suggestion
+
+
+Cancel
+
+
+
+
+
+
+
+
+
+
+
+
+                    public T this[HierarchyNode];
+
+
+
+
+
+
+### Parameters
+
+
+
+| Parameter | Description |
+| --- | --- |
+| node | The hierarchy node. |
+
+
+
+
+
+### Returns
+
+
+
+**T**
+        The value associated with the specified [HierarchyNode](Unity.Hierarchy.HierarchyNode.html).
+
+
+
+
+
+### Description
+
+
+
+Gets or sets the value associated with the specified [HierarchyNode](Unity.Hierarchy.HierarchyNode.html).
+
+
+            

@@ -1,0 +1,174 @@
+This version of Unity is unsupported.
+
+
+
+# AllProjects
+
+
+
+
+
+class in
+          Unity.Android.Gradle
+
+
+
+/
+
+
+
+Inherits from:[Unity.Android.Gradle.BaseBlock](Unity.Android.Gradle.BaseBlock.html)
+
+
+                  Leave feedback
+
+
+
+
+                  Suggest a change
+
+
+
+
+
+
+
+
+
+
+
+
+## Success!
+
+
+
+Thank you for helping us improve the quality of Unity Documentation. Although we cannot accept all submissions, we do read each suggested change from our users and will make updates where applicable.
+
+                      Close
+
+
+
+
+## Submission failed
+
+
+
+For some reason your suggested change could not be submitted. Please <a>try again</a> in a few minutes. And thank you for taking the time to help us improve the quality of Unity Documentation.
+
+                      Close
+
+
+                      Your name
+
+
+                      Your email
+
+
+                      Suggestion*
+
+                      Submit suggestion
+
+
+Cancel
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### Description
+
+
+
+The C# definition of the `allprojects` element in a gradle file.
+
+
+
+
+
+Configures this project and each of its sub-projects. For more information about the element, see Gradle's documentation: [allprojects element](https://docs.gradle.org/current/dsl/org.gradle.api.Project.html#org.gradle.api.Project:allprojects(groovy.lang.Closure))
+
+
+
+
+
+### Properties
+
+
+
+| Property | Description |
+| --- | --- |
+| Buildscript | The C# definition of the buildscript element in a gradle file. |
+| Repositories | The C# definition of the repositories element in a gradle file. |
+| Version | The C# definition of the version element in a gradle file. |
+
+
+
+
+
+### Constructors
+
+
+
+| Constructor | Description |
+| --- | --- |
+| AllProjects | Element constructor. |
+
+
+
+
+
+### Inherited Members
+
+
+
+
+
+
+
+
+### Public Methods
+
+| Method | Description |
+| --- | --- |
+| AddElement | Adds a new element as a child. |
+| Clear | Clears the content of this element. |
+| GetElement | Gets an element by ID. |
+| GetElements | Gets all custom child elements. |
+| GetName | Gets the name of the block. In some cases, the name is the signature of the function. |
+| GetRaw | Gets the raw value of this block. |
+| GetUniqueName | Gets the unique name of the element. |
+| RemoveElement | Removes a child element by id. |
+| SetRaw | Sets a raw string value to this block. |
+| ToString | Gets a serialized value from this block. |
+| AddElementDependencies | Adds a list of dependencies by ID to this element. |
+| AddElementDependency | Adds a dependency to this element. |
+| GetElementDependenciesIDs | Gets a read-only list of element IDs that this element depends on. |
+| GetID | Gets the unique ID of this element. |
+| Remove | Removes this element from the file. |
+| RemoveAllElementDependencies | Remove all element dependencies. |
+| RemoveElementDependency | Remove an element dependency. |
+| RemoveElementDependencyById | Remove an element dependency by ID. |
+| ResolveConflict | Resolve a conflict if another script has already modified the element. |
+
+
+
+
+
+
+
+
+            

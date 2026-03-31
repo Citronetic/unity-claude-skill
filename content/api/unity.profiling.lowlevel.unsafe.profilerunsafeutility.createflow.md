@@ -1,0 +1,110 @@
+This version of Unity is unsupported.
+
+
+
+# [ProfilerUnsafeUtility](Unity.Profiling.LowLevel.Unsafe.ProfilerUnsafeUtility.html).CreateFlow
+
+
+
+
+                  Leave feedback
+
+
+
+
+                  Suggest a change
+
+
+
+
+
+
+
+
+
+
+
+
+## Success!
+
+
+
+Thank you for helping us improve the quality of Unity Documentation. Although we cannot accept all submissions, we do read each suggested change from our users and will make updates where applicable.
+
+                      Close
+
+
+
+
+## Submission failed
+
+
+
+For some reason your suggested change could not be submitted. Please <a>try again</a> in a few minutes. And thank you for taking the time to help us improve the quality of Unity Documentation.
+
+                      Close
+
+
+                      Your name
+
+
+                      Your email
+
+
+                      Suggestion*
+
+                      Submit suggestion
+
+
+Cancel
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Declaration
+
+public static uint CreateFlow(ushort categoryId);
+
+
+
+
+
+
+### Returns
+
+
+
+**uint**
+        Returns flow identifier.
+
+
+
+
+
+### Description
+
+
+
+Create a new Profiler flow identifier.
+
+
+
+
+
+Use Profiler flow to highlight dependencies in multithreaded code.
+
+Additional resources: [FlowEvent](Unity.Profiling.LowLevel.Unsafe.ProfilerUnsafeUtility.FlowEvent.html), [CPU Usage Profiler module](../Manual/ProfilerCPU.html).
+
+
+            

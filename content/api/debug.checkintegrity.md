@@ -1,0 +1,103 @@
+This version of Unity is unsupported.
+
+
+
+# [Debug](Debug.html).CheckIntegrity
+
+
+
+
+                  Leave feedback
+
+
+
+
+                  Suggest a change
+
+
+
+
+
+
+
+
+
+
+
+
+## Success!
+
+
+
+Thank you for helping us improve the quality of Unity Documentation. Although we cannot accept all submissions, we do read each suggested change from our users and will make updates where applicable.
+
+                      Close
+
+
+
+
+## Submission failed
+
+
+
+For some reason your suggested change could not be submitted. Please <a>try again</a> in a few minutes. And thank you for taking the time to help us improve the quality of Unity Documentation.
+
+                      Close
+
+
+                      Your name
+
+
+                      Your email
+
+
+                      Suggestion*
+
+                      Submit suggestion
+
+
+Cancel
+
+
+
+
+                [Switch to Manual](../Manual/class-Debug.html)
+
+
+
+
+
+
+
+
+
+
+## Declaration
+
+public static string CheckIntegrity([IntegrityCheckLevel](IntegrityCheckLevel.html) level);
+
+
+
+
+
+
+### Parameters
+
+
+
+| Parameter | Description |
+| --- | --- |
+| level | Thoroughness of integrity check. |
+
+
+
+
+
+### Description
+
+
+
+Performs an integrity check of the currently running process and return discovered errors.
+
+
+            

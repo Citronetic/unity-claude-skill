@@ -1,0 +1,94 @@
+This version of Unity is unsupported.
+
+
+
+# [SystemInfo](SystemInfo.html).supportsMultisampledTextures
+
+
+
+
+                  Leave feedback
+
+
+
+
+                  Suggest a change
+
+
+
+
+
+
+
+
+
+
+
+
+## Success!
+
+
+
+Thank you for helping us improve the quality of Unity Documentation. Although we cannot accept all submissions, we do read each suggested change from our users and will make updates where applicable.
+
+                      Close
+
+
+
+
+## Submission failed
+
+
+
+For some reason your suggested change could not be submitted. Please <a>try again</a> in a few minutes. And thank you for taking the time to help us improve the quality of Unity Documentation.
+
+                      Close
+
+
+                      Your name
+
+
+                      Your email
+
+
+                      Suggestion*
+
+                      Submit suggestion
+
+
+Cancel
+
+
+
+
+
+
+
+
+
+
+
+
+                    public static int supportsMultisampledTextures;
+
+
+
+
+
+
+### Description
+
+
+
+Returns a value of 1 or higher if multisampled textures are supported. (Read Only)
+
+
+
+
+
+The property returns a value of 1 or higher if multisampled textures are supported, or a value of 0 if they are not supported.
+
+Additional resources: [RenderTexture.bindTextureMS](RenderTexture-bindTextureMS.html).
+
+
+            

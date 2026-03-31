@@ -1,0 +1,93 @@
+This version of Unity is unsupported.
+
+
+
+# [PointerEventBase<T0>](UIElements.PointerEventBase_1.html).pointerId
+
+
+
+
+                  Leave feedback
+
+
+
+
+                  Suggest a change
+
+
+
+
+
+
+
+
+
+
+
+
+## Success!
+
+
+
+Thank you for helping us improve the quality of Unity Documentation. Although we cannot accept all submissions, we do read each suggested change from our users and will make updates where applicable.
+
+                      Close
+
+
+
+
+## Submission failed
+
+
+
+For some reason your suggested change could not be submitted. Please <a>try again</a> in a few minutes. And thank you for taking the time to help us improve the quality of Unity Documentation.
+
+                      Close
+
+
+                      Your name
+
+
+                      Your email
+
+
+                      Suggestion*
+
+                      Submit suggestion
+
+
+Cancel
+
+
+
+
+
+
+
+
+
+
+
+
+                    public int pointerId;
+
+
+
+
+
+
+### Description
+
+
+
+Gets the identifier of the pointer that sent the event.
+
+
+
+
+
+If the mouse sends the event, the identifier is set to 0. If a touchscreen device sends the event, the identifier
+ is set to the finger ID, which ranges from 1 to the number of touches the device supports.
+
+
+            

@@ -1,0 +1,106 @@
+This version of Unity is unsupported.
+
+
+
+# [SystemInfo](SystemInfo.html).processorFrequency
+
+
+
+
+                  Leave feedback
+
+
+
+
+                  Suggest a change
+
+
+
+
+
+
+
+
+
+
+
+
+## Success!
+
+
+
+Thank you for helping us improve the quality of Unity Documentation. Although we cannot accept all submissions, we do read each suggested change from our users and will make updates where applicable.
+
+                      Close
+
+
+
+
+## Submission failed
+
+
+
+For some reason your suggested change could not be submitted. Please <a>try again</a> in a few minutes. And thank you for taking the time to help us improve the quality of Unity Documentation.
+
+                      Close
+
+
+                      Your name
+
+
+                      Your email
+
+
+                      Suggestion*
+
+                      Submit suggestion
+
+
+Cancel
+
+
+
+
+
+
+
+
+
+
+
+
+                    public static int processorFrequency;
+
+
+
+
+
+
+### Description
+
+
+
+The processor frequency of the device in MHz (Read Only).
+
+
+
+
+
+Returns the nominal CPU frequency in MHz, or zero if unknown. The actual CPU frequency might vary depending on device's current load and power conditions, especially on low-powered devices such as phones and laptops.
+
+**Notes:**
+
+
+
+          - iOS and WebGL platforms do not support querying CPU frequency.
+
+          - Some devices might indicate inaccurate processor frequency values to Unity. It's recommended to account for the possibility of inaccuracies when using this property.
+
+
+
+
+
+Additional resources: [SystemInfo.processorCount](SystemInfo-processorCount.html), [SystemInfo.processorType](SystemInfo-processorType.html).
+
+
+            

@@ -1,0 +1,120 @@
+This version of Unity is unsupported.
+
+
+                  **Experimental**: this API is experimental and might be changed or removed in the future.
+
+
+# [GraphicsFormatUtility](Experimental.Rendering.GraphicsFormatUtility.html).ConvertToAlphaFormat
+
+
+
+
+                  Leave feedback
+
+
+
+
+                  Suggest a change
+
+
+
+
+
+
+
+
+
+
+
+
+## Success!
+
+
+
+Thank you for helping us improve the quality of Unity Documentation. Although we cannot accept all submissions, we do read each suggested change from our users and will make updates where applicable.
+
+                      Close
+
+
+
+
+## Submission failed
+
+
+
+For some reason your suggested change could not be submitted. Please <a>try again</a> in a few minutes. And thank you for taking the time to help us improve the quality of Unity Documentation.
+
+                      Close
+
+
+                      Your name
+
+
+                      Your email
+
+
+                      Suggestion*
+
+                      Submit suggestion
+
+
+Cancel
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Declaration
+
+public static [Experimental.Rendering.GraphicsFormat](Experimental.Rendering.GraphicsFormat.html) ConvertToAlphaFormat([Experimental.Rendering.GraphicsFormat](Experimental.Rendering.GraphicsFormat.html) format);
+
+
+
+
+
+
+### Description
+
+
+
+Input a GraphicsFormat to return an equivalent GraphicsFormat that includes an alpha component.
+
+
+
+
+---
+
+
+
+
+
+
+
+
+## Declaration
+
+public static [TextureFormat](TextureFormat.html) ConvertToAlphaFormat([TextureFormat](TextureFormat.html) format);
+
+
+
+
+
+
+### Description
+
+
+
+Input a TextureFormat to return an equivalent TextureFormat that includes an alpha component.
+
+
+            

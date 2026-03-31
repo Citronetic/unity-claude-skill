@@ -1,0 +1,103 @@
+This version of Unity is unsupported.
+
+
+
+# MaskSource
+
+
+
+
+
+enumeration
+
+
+                  Leave feedback
+
+
+
+
+                  Suggest a change
+
+
+
+
+
+
+
+
+
+
+
+
+## Success!
+
+
+
+Thank you for helping us improve the quality of Unity Documentation. Although we cannot accept all submissions, we do read each suggested change from our users and will make updates where applicable.
+
+                      Close
+
+
+
+
+## Submission failed
+
+
+
+For some reason your suggested change could not be submitted. Please <a>try again</a> in a few minutes. And thank you for taking the time to help us improve the quality of Unity Documentation.
+
+                      Close
+
+
+                      Your name
+
+
+                      Your email
+
+
+                      Suggestion*
+
+                      Submit suggestion
+
+
+Cancel
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### Description
+
+
+
+Sets which source to use when generating the mask.
+
+
+
+
+
+### Properties
+
+
+
+| Property | Description |
+| --- | --- |
+| Sprite | Use a Sprite as a source for the mask. |
+| SupportedRenderers | Use a supported Renderer as a source of the mask. |
+
+
+            

@@ -1,0 +1,104 @@
+This version of Unity is unsupported.
+
+
+
+# [SystemInfo](SystemInfo.html).unsupportedIdentifier
+
+
+
+
+                  Leave feedback
+
+
+
+
+                  Suggest a change
+
+
+
+
+
+
+
+
+
+
+
+
+## Success!
+
+
+
+Thank you for helping us improve the quality of Unity Documentation. Although we cannot accept all submissions, we do read each suggested change from our users and will make updates where applicable.
+
+                      Close
+
+
+
+
+## Submission failed
+
+
+
+For some reason your suggested change could not be submitted. Please <a>try again</a> in a few minutes. And thank you for taking the time to help us improve the quality of Unity Documentation.
+
+                      Close
+
+
+                      Your name
+
+
+                      Your email
+
+
+                      Suggestion*
+
+                      Submit suggestion
+
+
+Cancel
+
+
+
+
+
+
+
+
+
+
+
+
+                    public static string unsupportedIdentifier;
+
+
+
+
+
+
+### Description
+
+
+
+Value returned by SystemInfo string properties which are not supported on the current platform.
+
+
+              
+
+
+```
+using UnityEngine;
+using System.Collections;public class NewBehaviourScript : MonoBehaviour
+{
+    void Start()
+    {
+        if (SystemInfo.unsupportedIdentifier != SystemInfo.deviceUniqueIdentifier)
+        {
+            // use SystemInfo.deviceUniqueIdentifier
+        }
+    }
+}
+```
+
+
+            

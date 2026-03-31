@@ -1,0 +1,104 @@
+This version of Unity is unsupported.
+
+
+
+# PrefabInstanceStatus
+
+
+
+
+
+enumeration
+
+
+                  Leave feedback
+
+
+
+
+                  Suggest a change
+
+
+
+
+
+
+
+
+
+
+
+
+## Success!
+
+
+
+Thank you for helping us improve the quality of Unity Documentation. Although we cannot accept all submissions, we do read each suggested change from our users and will make updates where applicable.
+
+                      Close
+
+
+
+
+## Submission failed
+
+
+
+For some reason your suggested change could not be submitted. Please <a>try again</a> in a few minutes. And thank you for taking the time to help us improve the quality of Unity Documentation.
+
+                      Close
+
+
+                      Your name
+
+
+                      Your email
+
+
+                      Suggestion*
+
+                      Submit suggestion
+
+
+Cancel
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### Description
+
+
+
+Enum with status about whether a Prefab instance is properly connected to its asset.
+
+
+
+
+
+### Properties
+
+
+
+| Property | Description |
+| --- | --- |
+| NotAPrefab | The object is not part of a Prefab instance. |
+| Connected | The Prefab instance is connected to its Prefab Asset. |
+| MissingAsset | The Prefab instance is missing its Prefab Asset. |
+
+
+            
