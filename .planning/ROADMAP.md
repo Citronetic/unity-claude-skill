@@ -13,7 +13,7 @@ This project builds a Claude Code skill for Unity game development by systematic
 Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Scraping Infrastructure** - Chrome integration working, URL tree mapped, manifest tracking extraction status (completed 2026-03-30)
-- [ ] **Phase 2: Content Extraction** - All tutorial pages scraped with verified Markdown content
+- [x] **Phase 2: Content Extraction** - All tutorial pages scraped with verified Markdown content (completed 2026-03-31)
 - [ ] **Phase 3: Content Synthesis** - Tutorial prose restructured into concise reference format with version-verified APIs
 - [ ] **Phase 4: Skill Foundation** - SKILL.md routing table and progressive disclosure architecture in place
 - [ ] **Phase 5: Editor & Scripting Fundamentals** - Foundation reference files covering project setup, editor workflows, and C# scripting
@@ -172,7 +172,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 (and 7 in parallel) 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Scraping Infrastructure | 3/3 | Complete    | 2026-03-30 |
-| 2. Content Extraction | 1/2 | In Progress | - |
+| 2. Content Extraction | 1/2 | Complete    | 2026-03-31 |
 | 3. Content Synthesis | 0/TBD | Not started | - |
 | 4. Skill Foundation | 0/TBD | Not started | - |
 | 5. Editor & Scripting Fundamentals | 0/TBD | Not started | - |
