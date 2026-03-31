@@ -71,7 +71,7 @@ Plans:
 Plans:
 - [x] 03-01-PLAN.md -- Synthesis infrastructure: topic mapping, API index, and deprecated patterns reference
 - [x] 03-02-PLAN.md -- Curate and synthesize all 16 reference topics into intermediate files
-- [ ] 03-03-PLAN.md -- Verify synthesis against API index and fix deprecated patterns
+- [x] 03-03-PLAN.md -- Verify synthesis against API index and fix deprecated patterns
 
 ### Phase 4: Skill Foundation
 **Goal**: SKILL.md exists with valid frontmatter, a routing table covering all reference files, and the progressive disclosure architecture is established
@@ -174,7 +174,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 (and 7 in parallel) 
 |-------|----------------|--------|-----------|
 | 1. Scraping Infrastructure | 3/3 | Complete    | 2026-03-30 |
 | 2. Content Extraction | 1/2 | Complete    | 2026-03-31 |
-| 3. Content Synthesis | 2/3 | In Progress|  |
+| 3. Content Synthesis | 3/3 | Complete    | 2026-03-31 |
 | 4. Skill Foundation | 0/TBD | Not started | - |
 | 5. Editor & Scripting Fundamentals | 0/TBD | Not started | - |
 | 6. Core Gameplay Systems | 0/TBD | Not started | - |
