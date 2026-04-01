@@ -111,11 +111,11 @@ Plans:
   2. references/input-system.md covers New Input System (Input Actions, bindings, PlayerInput component) and explicitly recommends it over legacy InputManager
   3. references/testing.md covers Unity Test Framework with EditMode and PlayMode test patterns using NUnit
   4. Touch and mobile input patterns are documented alongside desktop input
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 06-01: TBD
-- [ ] 06-02: TBD
+- [ ] 06-01-PLAN.md -- Populate references/physics.md from synthesis (PHYS-01, PHYS-02, PHYS-03)
+- [ ] 06-02-PLAN.md -- Populate references/input-system.md and references/testing.md from synthesis (INPUT-01, INPUT-02, INPUT-03, TEST-01, TEST-02)
 
 ### Phase 7: Presentation Layer
 **Goal**: Reference files covering visual output, UI, animation, and audio are complete
@@ -176,7 +176,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 (and 7 in parallel) 
 | 3. Content Synthesis | 3/3 | Complete    | 2026-03-31 |
 | 4. Skill Foundation | 1/1 | Complete    | 2026-04-01 |
 | 5. Editor & Scripting Fundamentals | 2/2 | Complete    | 2026-04-01 |
-| 6. Core Gameplay Systems | 0/TBD | Not started | - |
+| 6. Core Gameplay Systems | 0/2 | Not started | - |
 | 7. Presentation Layer | 0/TBD | Not started | - |
 | 8. Production & Platform | 0/TBD | Not started | - |
 | 9. Quality & Validation | 0/TBD | Not started | - |
