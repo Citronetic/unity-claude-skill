@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: completed
-stopped_at: Phase 6 and 7 context gathered
-last_updated: "2026-04-01T06:05:30.689Z"
-last_activity: 2026-04-01 -- Completed 05-01-PLAN (project-setup.md and editor-workflows.md from synthesis)
+stopped_at: Completed Phase 6+7 reference files (8 files populated)
+last_updated: "2026-04-01T06:23:07Z"
+last_activity: 2026-04-01 -- Completed Phase 6 (physics, input, testing) and Phase 7 (rendering-2d, rendering-3d, ui-toolkit, animation, audio)
 progress:
   total_phases: 9
-  completed_phases: 5
-  total_plans: 11
-  completed_plans: 11
+  completed_phases: 7
+  total_plans: 16
+  completed_plans: 16
   percent: 100
 ---
 
@@ -21,23 +21,23 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-29)
 
 **Core value:** Every Unity development workflow, CLI command, and best practice from the official tutorials is captured in a single, accurate, actionable skill file.
-**Current focus:** Phase 5: Editor & Scripting Fundamentals (Complete)
+**Current focus:** Phase 8: Production & Platform (next)
 
 ## Current Position
 
-Phase: 5 of 9 (Editor & Scripting Fundamentals) -- COMPLETE
-Plan: 2 of 2 in current phase (both complete)
-Status: Phase 5 Complete -- all 4 reference files populated
-Last activity: 2026-04-01 -- Completed 05-01-PLAN (project-setup.md and editor-workflows.md from synthesis)
+Phase: 7 of 9 (Presentation Layer) -- COMPLETE
+Plan: 3 of 3 in current phase (all complete)
+Status: Phase 6+7 Complete -- all 8 reference files populated (physics, input-system, testing, rendering-2d, rendering-3d, ui-toolkit, animation, audio)
+Last activity: 2026-04-01 -- Completed Phase 6+7 (8 reference files from synthesis)
 
 Progress: [##########] 100%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 10
-- Average duration: 10.2min
-- Total execution time: 1.7 hours
+- Total plans completed: 15
+- Average duration: 8.1min
+- Total execution time: 2.0 hours
 
 **By Phase:**
 
@@ -53,10 +53,15 @@ Progress: [##########] 100%
 | Phase 04 P01 | 3min | 2 tasks | 17 files |
 | Phase 05 P01 | 3min | 2 tasks | 2 files |
 | Phase 05 P02 | 3min | 2 tasks | 2 files |
+| Phase 06 P01 | 2min | 1 task  | 1 file  |
+| Phase 06 P02 | 3min | 2 tasks | 2 files |
+| Phase 07 P01 | 2min | 2 tasks | 2 files |
+| Phase 07 P02 | 2min | 2 tasks | 2 files |
+| Phase 07 P03 | 1min | 1 task  | 1 file  |
 
 **Recent Trend:**
-- Last 5 plans: 15min, 4min, 3min, 3min, 3min
-- Trend: Light-edit synthesis transforms completing in 3min consistently; Phase 5 fully done
+- Last 5 plans: 2min, 3min, 2min, 2min, 1min
+- Trend: Light-edit synthesis transforms completing in 1-3min; Phase 6+7 fully done in 9min total
 
 *Updated after each plan completion*
 
@@ -97,6 +102,9 @@ Recent decisions affecting current work:
 - [Phase 04]: 10 universal principles covering Unity 6+ opinionated guidance (URP, UI Toolkit, New Input System, Addressables, etc.)
 - [Phase 04]: Routing table uses markdown tables grouped by 5 categories for quick scanning
 - [Phase 05]: Light edit approach for synthesis-to-reference: strip metadata header, simplify title, preserve all content verbatim
+- [Phase 06]: Cross-reference comments added linking physics->scripting-fundamentals, input->scripting-fundamentals, testing->scripting-patterns
+- [Phase 06]: testing.md at 299 lines (just under limit) - no content trimming needed beyond header replacement
+- [Phase 07]: URP-over-Built-in recommendation preserved verbatim in rendering-3d.md DO/DON'T table (RNDR-03)
 
 ### Pending Todos
 
@@ -111,6 +119,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-04-01T06:05:30.687Z
-Stopped at: Phase 6 and 7 context gathered
+Last session: 2026-04-01T06:23:07Z
+Stopped at: Completed Phase 6+7 reference files (8 files populated)
 Resume file: None

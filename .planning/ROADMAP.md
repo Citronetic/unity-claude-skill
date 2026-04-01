@@ -17,8 +17,8 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 3: Content Synthesis** - Tutorial prose restructured into concise reference format with version-verified APIs (completed 2026-03-31)
 - [x] **Phase 4: Skill Foundation** - SKILL.md routing table and progressive disclosure architecture in place (completed 2026-04-01)
 - [x] **Phase 5: Editor & Scripting Fundamentals** - Foundation reference files covering project setup, editor workflows, and C# scripting (completed 2026-04-01)
-- [ ] **Phase 6: Core Gameplay Systems** - Physics, input, and testing reference files delivering the gameplay loop knowledge
-- [ ] **Phase 7: Presentation Layer** - Rendering, UI, animation, and audio reference files covering visual and audio output
+- [x] **Phase 6: Core Gameplay Systems** - Physics, input, and testing reference files delivering the gameplay loop knowledge (completed 2026-04-01)
+- [x] **Phase 7: Presentation Layer** - Rendering, UI, animation, and audio reference files covering visual and audio output (completed 2026-04-01)
 - [ ] **Phase 8: Production & Platform** - Build/deploy, asset pipeline, CLI tools, and mobile platform reference files
 - [ ] **Phase 9: Quality & Validation** - All files validated against size limits, activation tested, context budget confirmed
 
@@ -114,8 +114,8 @@ Plans:
 **Plans**: 2 plans
 
 Plans:
-- [ ] 06-01-PLAN.md -- Populate references/physics.md from synthesis (PHYS-01, PHYS-02, PHYS-03)
-- [ ] 06-02-PLAN.md -- Populate references/input-system.md and references/testing.md from synthesis (INPUT-01, INPUT-02, INPUT-03, TEST-01, TEST-02)
+- [x] 06-01-PLAN.md -- Populate references/physics.md from synthesis (PHYS-01, PHYS-02, PHYS-03)
+- [x] 06-02-PLAN.md -- Populate references/input-system.md and references/testing.md from synthesis (INPUT-01, INPUT-02, INPUT-03, TEST-01, TEST-02)
 
 ### Phase 7: Presentation Layer
 **Goal**: Reference files covering visual output, UI, animation, and audio are complete
@@ -130,9 +130,9 @@ Plans:
 **Plans**: 3 plans
 
 Plans:
-- [ ] 07-01-PLAN.md -- Populate rendering-2d.md and rendering-3d.md from synthesis content
-- [ ] 07-02-PLAN.md -- Populate ui-toolkit.md and animation.md from synthesis content
-- [ ] 07-03-PLAN.md -- Populate audio.md from synthesis content
+- [x] 07-01-PLAN.md -- Populate rendering-2d.md and rendering-3d.md from synthesis content
+- [x] 07-02-PLAN.md -- Populate ui-toolkit.md and animation.md from synthesis content
+- [x] 07-03-PLAN.md -- Populate audio.md from synthesis content
 
 ### Phase 8: Production & Platform
 **Goal**: Reference files covering build, deployment, asset management, CLI tools, and mobile optimization are complete
@@ -176,7 +176,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 (and 7 in parallel) 
 | 3. Content Synthesis | 3/3 | Complete    | 2026-03-31 |
 | 4. Skill Foundation | 1/1 | Complete    | 2026-04-01 |
 | 5. Editor & Scripting Fundamentals | 2/2 | Complete    | 2026-04-01 |
-| 6. Core Gameplay Systems | 0/2 | Not started | - |
-| 7. Presentation Layer | 0/3 | Not started | - |
+| 6. Core Gameplay Systems | 2/2 | Complete    | 2026-04-01 |
+| 7. Presentation Layer | 3/3 | Complete    | 2026-04-01 |
 | 8. Production & Platform | 0/TBD | Not started | - |
 | 9. Quality & Validation | 0/TBD | Not started | - |

@@ -53,37 +53,37 @@
 
 ### Physics
 
-- [ ] **PHYS-01**: references/physics.md covers Rigidbody, Colliders, triggers, raycasting
-- [ ] **PHYS-02**: Content includes both 2D and 3D physics variants
-- [ ] **PHYS-03**: Physics callbacks (OnCollisionEnter, OnTriggerEnter) documented
+- [x] **PHYS-01**: references/physics.md covers Rigidbody, Colliders, triggers, raycasting
+- [x] **PHYS-02**: Content includes both 2D and 3D physics variants
+- [x] **PHYS-03**: Physics callbacks (OnCollisionEnter, OnTriggerEnter) documented
 
 ### Rendering
 
-- [ ] **RNDR-01**: references/rendering-2d.md covers sprites, SpriteRenderer, 2D lighting, tilemaps
-- [ ] **RNDR-02**: references/rendering-3d.md covers materials, lighting, cameras, URP setup
-- [ ] **RNDR-03**: Content recommends URP over Built-in Render Pipeline for new projects
+- [x] **RNDR-01**: references/rendering-2d.md covers sprites, SpriteRenderer, 2D lighting, tilemaps
+- [x] **RNDR-02**: references/rendering-3d.md covers materials, lighting, cameras, URP setup
+- [x] **RNDR-03**: Content recommends URP over Built-in Render Pipeline for new projects
 
 ### UI Systems
 
-- [ ] **UI-01**: references/ui-toolkit.md covers UI Toolkit as primary UI system
-- [ ] **UI-02**: Content includes uGUI guidance for existing/legacy projects
-- [ ] **UI-03**: UI content covers both runtime UI and editor UI patterns
+- [x] **UI-01**: references/ui-toolkit.md covers UI Toolkit as primary UI system
+- [x] **UI-02**: Content includes uGUI guidance for existing/legacy projects
+- [x] **UI-03**: UI content covers both runtime UI and editor UI patterns
 
 ### Animation
 
-- [ ] **ANIM-01**: references/animation.md covers Animator, state machines, animation clips
-- [ ] **ANIM-02**: Content includes procedural animation patterns (DOTween or similar)
+- [x] **ANIM-01**: references/animation.md covers Animator, state machines, animation clips
+- [x] **ANIM-02**: Content includes procedural animation patterns (DOTween or similar)
 
 ### Audio
 
-- [ ] **AUDIO-01**: references/audio.md covers AudioSource, AudioListener, AudioMixer
-- [ ] **AUDIO-02**: Content covers audio compression formats and platform considerations
+- [x] **AUDIO-01**: references/audio.md covers AudioSource, AudioListener, AudioMixer
+- [x] **AUDIO-02**: Content covers audio compression formats and platform considerations
 
 ### Input
 
-- [ ] **INPUT-01**: references/input-system.md covers New Input System (Input Actions, bindings)
-- [ ] **INPUT-02**: Content covers PlayerInput component and touch/mobile input
-- [ ] **INPUT-03**: Content explicitly recommends New Input System over legacy InputManager
+- [x] **INPUT-01**: references/input-system.md covers New Input System (Input Actions, bindings)
+- [x] **INPUT-02**: Content covers PlayerInput component and touch/mobile input
+- [x] **INPUT-03**: Content explicitly recommends New Input System over legacy InputManager
 
 ### Build & Deploy
 
@@ -98,8 +98,8 @@
 
 ### Testing
 
-- [ ] **TEST-01**: references/testing.md covers Unity Test Framework (EditMode/PlayMode)
-- [ ] **TEST-02**: Content includes NUnit patterns and test organization
+- [x] **TEST-01**: references/testing.md covers Unity Test Framework (EditMode/PlayMode)
+- [x] **TEST-02**: Content includes NUnit patterns and test organization
 
 ### Mobile Platform
 
@@ -182,24 +182,24 @@
 | SCPT-02 | Phase 5 | Complete |
 | SCPT-03 | Phase 5 | Complete |
 | SCPT-04 | Phase 5 | Complete |
-| PHYS-01 | Phase 6 | Pending |
-| PHYS-02 | Phase 6 | Pending |
-| PHYS-03 | Phase 6 | Pending |
-| INPUT-01 | Phase 6 | Pending |
-| INPUT-02 | Phase 6 | Pending |
-| INPUT-03 | Phase 6 | Pending |
-| TEST-01 | Phase 6 | Pending |
-| TEST-02 | Phase 6 | Pending |
-| RNDR-01 | Phase 7 | Pending |
-| RNDR-02 | Phase 7 | Pending |
-| RNDR-03 | Phase 7 | Pending |
-| UI-01 | Phase 7 | Pending |
-| UI-02 | Phase 7 | Pending |
-| UI-03 | Phase 7 | Pending |
-| ANIM-01 | Phase 7 | Pending |
-| ANIM-02 | Phase 7 | Pending |
-| AUDIO-01 | Phase 7 | Pending |
-| AUDIO-02 | Phase 7 | Pending |
+| PHYS-01 | Phase 6 | Complete |
+| PHYS-02 | Phase 6 | Complete |
+| PHYS-03 | Phase 6 | Complete |
+| INPUT-01 | Phase 6 | Complete |
+| INPUT-02 | Phase 6 | Complete |
+| INPUT-03 | Phase 6 | Complete |
+| TEST-01 | Phase 6 | Complete |
+| TEST-02 | Phase 6 | Complete |
+| RNDR-01 | Phase 7 | Complete |
+| RNDR-02 | Phase 7 | Complete |
+| RNDR-03 | Phase 7 | Complete |
+| UI-01 | Phase 7 | Complete |
+| UI-02 | Phase 7 | Complete |
+| UI-03 | Phase 7 | Complete |
+| ANIM-01 | Phase 7 | Complete |
+| ANIM-02 | Phase 7 | Complete |
+| AUDIO-01 | Phase 7 | Complete |
+| AUDIO-02 | Phase 7 | Complete |
 | BUILD-01 | Phase 8 | Pending |
 | BUILD-02 | Phase 8 | Pending |
 | BUILD-03 | Phase 8 | Pending |
