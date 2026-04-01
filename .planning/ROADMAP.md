@@ -16,7 +16,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 2: Content Extraction** - All tutorial pages scraped with verified Markdown content (completed 2026-03-31)
 - [x] **Phase 3: Content Synthesis** - Tutorial prose restructured into concise reference format with version-verified APIs (completed 2026-03-31)
 - [x] **Phase 4: Skill Foundation** - SKILL.md routing table and progressive disclosure architecture in place (completed 2026-04-01)
-- [ ] **Phase 5: Editor & Scripting Fundamentals** - Foundation reference files covering project setup, editor workflows, and C# scripting
+- [x] **Phase 5: Editor & Scripting Fundamentals** - Foundation reference files covering project setup, editor workflows, and C# scripting (completed 2026-04-01)
 - [ ] **Phase 6: Core Gameplay Systems** - Physics, input, and testing reference files delivering the gameplay loop knowledge
 - [ ] **Phase 7: Presentation Layer** - Rendering, UI, animation, and audio reference files covering visual and audio output
 - [ ] **Phase 8: Production & Platform** - Build/deploy, asset pipeline, CLI tools, and mobile platform reference files
@@ -99,8 +99,8 @@ Plans:
 **Plans**: 2 plans
 
 Plans:
-- [ ] 05-01-PLAN.md -- Populate project-setup.md and editor-workflows.md from synthesis content
-- [ ] 05-02-PLAN.md -- Populate scripting-fundamentals.md and scripting-patterns.md from synthesis content
+- [x] 05-01-PLAN.md -- Populate project-setup.md and editor-workflows.md from synthesis content
+- [x] 05-02-PLAN.md -- Populate scripting-fundamentals.md and scripting-patterns.md from synthesis content
 
 ### Phase 6: Core Gameplay Systems
 **Goal**: Reference files covering the gameplay loop (physics, input, testing) are complete and cross-referenced
@@ -175,7 +175,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 (and 7 in parallel) 
 | 2. Content Extraction | 1/2 | Complete    | 2026-03-31 |
 | 3. Content Synthesis | 3/3 | Complete    | 2026-03-31 |
 | 4. Skill Foundation | 1/1 | Complete    | 2026-04-01 |
-| 5. Editor & Scripting Fundamentals | 0/2 | Not started | - |
+| 5. Editor & Scripting Fundamentals | 2/2 | Complete    | 2026-04-01 |
 | 6. Core Gameplay Systems | 0/TBD | Not started | - |
 | 7. Presentation Layer | 0/TBD | Not started | - |
 | 8. Production & Platform | 0/TBD | Not started | - |

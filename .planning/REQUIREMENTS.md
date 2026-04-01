@@ -46,10 +46,10 @@
 
 ### Scripting
 
-- [ ] **SCPT-01**: references/scripting-fundamentals.md covers MonoBehaviour lifecycle, components, events
-- [ ] **SCPT-02**: references/scripting-patterns.md covers ScriptableObjects, coroutines, async/await
-- [ ] **SCPT-03**: Scripting content covers serialization and component patterns
-- [ ] **SCPT-04**: Content explicitly steers away from deprecated patterns (old Input, Resources.Load)
+- [x] **SCPT-01**: references/scripting-fundamentals.md covers MonoBehaviour lifecycle, components, events
+- [x] **SCPT-02**: references/scripting-patterns.md covers ScriptableObjects, coroutines, async/await
+- [x] **SCPT-03**: Scripting content covers serialization and component patterns
+- [x] **SCPT-04**: Content explicitly steers away from deprecated patterns (old Input, Resources.Load)
 
 ### Physics
 
@@ -178,10 +178,10 @@
 | EDIT-01 | Phase 5 | Pending |
 | EDIT-02 | Phase 5 | Pending |
 | EDIT-03 | Phase 5 | Pending |
-| SCPT-01 | Phase 5 | Pending |
-| SCPT-02 | Phase 5 | Pending |
-| SCPT-03 | Phase 5 | Pending |
-| SCPT-04 | Phase 5 | Pending |
+| SCPT-01 | Phase 5 | Complete |
+| SCPT-02 | Phase 5 | Complete |
+| SCPT-03 | Phase 5 | Complete |
+| SCPT-04 | Phase 5 | Complete |
 | PHYS-01 | Phase 6 | Pending |
 | PHYS-02 | Phase 6 | Pending |
 | PHYS-03 | Phase 6 | Pending |
