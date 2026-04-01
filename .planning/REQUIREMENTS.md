@@ -40,9 +40,9 @@
 
 ### Editor & Project Setup
 
-- [ ] **EDIT-01**: references/project-setup.md covers Unity Hub, project creation, folder structure
-- [ ] **EDIT-02**: references/editor-workflows.md covers scene management, GameObjects, Prefabs, Inspector
-- [ ] **EDIT-03**: Content includes recommended .gitignore, LFS config, meta file handling
+- [x] **EDIT-01**: references/project-setup.md covers Unity Hub, project creation, folder structure
+- [x] **EDIT-02**: references/editor-workflows.md covers scene management, GameObjects, Prefabs, Inspector
+- [x] **EDIT-03**: Content includes recommended .gitignore, LFS config, meta file handling
 
 ### Scripting
 
@@ -175,9 +175,9 @@
 | SKIL-03 | Phase 4 | Complete |
 | SKIL-04 | Phase 4 | Complete |
 | SKIL-05 | Phase 4 | Complete |
-| EDIT-01 | Phase 5 | Pending |
-| EDIT-02 | Phase 5 | Pending |
-| EDIT-03 | Phase 5 | Pending |
+| EDIT-01 | Phase 5 | Complete |
+| EDIT-02 | Phase 5 | Complete |
+| EDIT-03 | Phase 5 | Complete |
 | SCPT-01 | Phase 5 | Complete |
 | SCPT-02 | Phase 5 | Complete |
 | SCPT-03 | Phase 5 | Complete |
