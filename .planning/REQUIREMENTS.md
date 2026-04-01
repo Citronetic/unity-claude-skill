@@ -87,14 +87,14 @@
 
 ### Build & Deploy
 
-- [ ] **BUILD-01**: references/build-deploy.md covers build settings, player settings, platform switching
-- [ ] **BUILD-02**: references/cli-tools.md covers Unity command-line arguments and batch mode
-- [ ] **BUILD-03**: Content covers IL2CPP vs Mono scripting backends
+- [x] **BUILD-01**: references/build-deploy.md covers build settings, player settings, platform switching
+- [x] **BUILD-02**: references/cli-tools.md covers Unity command-line arguments and batch mode
+- [x] **BUILD-03**: Content covers IL2CPP vs Mono scripting backends
 
 ### Asset Pipeline
 
-- [ ] **ASSET-01**: references/asset-pipeline.md covers import settings, asset management
-- [ ] **ASSET-02**: Content covers Addressables as modern replacement for Resources.Load
+- [x] **ASSET-01**: references/asset-pipeline.md covers import settings, asset management
+- [x] **ASSET-02**: Content covers Addressables as modern replacement for Resources.Load
 
 ### Testing
 
@@ -103,8 +103,8 @@
 
 ### Mobile Platform
 
-- [ ] **MOBL-01**: references/mobile-platform.md covers mobile-specific optimization
-- [ ] **MOBL-02**: Content covers touch input, screen resolution, performance considerations
+- [x] **MOBL-01**: references/mobile-platform.md covers mobile-specific optimization
+- [x] **MOBL-02**: Content covers touch input, screen resolution, performance considerations
 
 ### Quality & Validation
 
@@ -200,13 +200,13 @@
 | ANIM-02 | Phase 7 | Complete |
 | AUDIO-01 | Phase 7 | Complete |
 | AUDIO-02 | Phase 7 | Complete |
-| BUILD-01 | Phase 8 | Pending |
-| BUILD-02 | Phase 8 | Pending |
-| BUILD-03 | Phase 8 | Pending |
-| ASSET-01 | Phase 8 | Pending |
-| ASSET-02 | Phase 8 | Pending |
-| MOBL-01 | Phase 8 | Pending |
-| MOBL-02 | Phase 8 | Pending |
+| BUILD-01 | Phase 8 | Complete |
+| BUILD-02 | Phase 8 | Complete |
+| BUILD-03 | Phase 8 | Complete |
+| ASSET-01 | Phase 8 | Complete |
+| ASSET-02 | Phase 8 | Complete |
+| MOBL-01 | Phase 8 | Complete |
+| MOBL-02 | Phase 8 | Complete |
 | QUAL-01 | Phase 9 | Pending |
 | QUAL-02 | Phase 9 | Pending |
 | QUAL-03 | Phase 9 | Pending |

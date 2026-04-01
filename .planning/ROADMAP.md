@@ -19,7 +19,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 5: Editor & Scripting Fundamentals** - Foundation reference files covering project setup, editor workflows, and C# scripting (completed 2026-04-01)
 - [x] **Phase 6: Core Gameplay Systems** - Physics, input, and testing reference files delivering the gameplay loop knowledge (completed 2026-04-01)
 - [x] **Phase 7: Presentation Layer** - Rendering, UI, animation, and audio reference files covering visual and audio output (completed 2026-04-01)
-- [ ] **Phase 8: Production & Platform** - Build/deploy, asset pipeline, CLI tools, and mobile platform reference files
+- [x] **Phase 8: Production & Platform** - Build/deploy, asset pipeline, CLI tools, and mobile platform reference files (completed 2026-04-01)
 - [ ] **Phase 9: Quality & Validation** - All files validated against size limits, activation tested, context budget confirmed
 
 ## Phase Details
@@ -143,11 +143,10 @@ Plans:
   2. references/cli-tools.md covers Unity command-line arguments and batch mode operations
   3. references/asset-pipeline.md covers import settings, asset management, and Addressables as the modern replacement for Resources.Load
   4. references/mobile-platform.md covers mobile-specific optimization, touch input, screen resolution, and performance considerations
-**Plans**: TBD
+**Plans**: 1 plan
 
 Plans:
-- [ ] 08-01: TBD
-- [ ] 08-02: TBD
+- [x] 08-01-PLAN.md -- Populate build-deploy, cli-tools, asset-pipeline, and mobile-platform references from synthesis
 
 ### Phase 9: Quality & Validation
 **Goal**: Every reference file meets size and quality constraints, the skill activates correctly, and total content fits within context budget
@@ -178,5 +177,5 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 (and 7 in parallel) 
 | 5. Editor & Scripting Fundamentals | 2/2 | Complete    | 2026-04-01 |
 | 6. Core Gameplay Systems | 2/2 | Complete    | 2026-04-01 |
 | 7. Presentation Layer | 3/3 | Complete    | 2026-04-01 |
-| 8. Production & Platform | 0/TBD | Not started | - |
+| 8. Production & Platform | 1/1 | Complete    | 2026-04-01 |
 | 9. Quality & Validation | 0/TBD | Not started | - |
