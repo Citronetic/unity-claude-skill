@@ -82,11 +82,10 @@ Plans:
   2. SKILL.md body contains a routing table mapping user intents (e.g., "physics", "scripting", "build") to specific reference files
   3. SKILL.md is under 500 lines and the description has front-loaded high-frequency Unity keywords
   4. The references/ directory structure is created with the progressive disclosure layout (SKILL.md -> references/*.md)
-**Plans**: TBD
+**Plans**: 1 plan
 
 Plans:
-- [ ] 04-01: TBD
-- [ ] 04-02: TBD
+- [ ] 04-01-PLAN.md -- Create SKILL.md with frontmatter and routing table, establish references/ directory with 16 placeholder files
 
 ### Phase 5: Editor & Scripting Fundamentals
 **Goal**: The foundational reference files that all other domain files depend on are complete and accurate
@@ -175,7 +174,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 (and 7 in parallel) 
 | 1. Scraping Infrastructure | 3/3 | Complete    | 2026-03-30 |
 | 2. Content Extraction | 1/2 | Complete    | 2026-03-31 |
 | 3. Content Synthesis | 3/3 | Complete    | 2026-03-31 |
-| 4. Skill Foundation | 0/TBD | Not started | - |
+| 4. Skill Foundation | 0/1 | Not started | - |
 | 5. Editor & Scripting Fundamentals | 0/TBD | Not started | - |
 | 6. Core Gameplay Systems | 0/TBD | Not started | - |
 | 7. Presentation Layer | 0/TBD | Not started | - |
