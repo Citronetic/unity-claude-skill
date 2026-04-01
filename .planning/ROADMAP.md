@@ -127,12 +127,12 @@ Plans:
   3. references/ui-toolkit.md covers UI Toolkit as primary system with uGUI guidance for legacy projects, including both runtime and editor UI patterns
   4. references/animation.md covers Animator state machines, animation clips, and procedural animation patterns
   5. references/audio.md covers AudioSource, AudioListener, AudioMixer, and compression format considerations
-**Plans**: TBD
+**Plans**: 3 plans
 
 Plans:
-- [ ] 07-01: TBD
-- [ ] 07-02: TBD
-- [ ] 07-03: TBD
+- [ ] 07-01-PLAN.md -- Populate rendering-2d.md and rendering-3d.md from synthesis content
+- [ ] 07-02-PLAN.md -- Populate ui-toolkit.md and animation.md from synthesis content
+- [ ] 07-03-PLAN.md -- Populate audio.md from synthesis content
 
 ### Phase 8: Production & Platform
 **Goal**: Reference files covering build, deployment, asset management, CLI tools, and mobile optimization are complete
@@ -177,6 +177,6 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 (and 7 in parallel) 
 | 4. Skill Foundation | 1/1 | Complete    | 2026-04-01 |
 | 5. Editor & Scripting Fundamentals | 2/2 | Complete    | 2026-04-01 |
 | 6. Core Gameplay Systems | 0/2 | Not started | - |
-| 7. Presentation Layer | 0/TBD | Not started | - |
+| 7. Presentation Layer | 0/3 | Not started | - |
 | 8. Production & Platform | 0/TBD | Not started | - |
 | 9. Quality & Validation | 0/TBD | Not started | - |
