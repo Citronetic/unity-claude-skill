@@ -96,11 +96,11 @@ Plans:
   2. references/editor-workflows.md covers scene management, GameObjects, Prefabs, and Inspector workflows
   3. references/scripting-fundamentals.md covers MonoBehaviour lifecycle, components, events, and serialization
   4. references/scripting-patterns.md covers ScriptableObjects, coroutines, async/await, and explicitly steers away from deprecated patterns
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 05-01: TBD
-- [ ] 05-02: TBD
+- [ ] 05-01-PLAN.md -- Populate project-setup.md and editor-workflows.md from synthesis content
+- [ ] 05-02-PLAN.md -- Populate scripting-fundamentals.md and scripting-patterns.md from synthesis content
 
 ### Phase 6: Core Gameplay Systems
 **Goal**: Reference files covering the gameplay loop (physics, input, testing) are complete and cross-referenced
@@ -175,7 +175,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 (and 7 in parallel) 
 | 2. Content Extraction | 1/2 | Complete    | 2026-03-31 |
 | 3. Content Synthesis | 3/3 | Complete    | 2026-03-31 |
 | 4. Skill Foundation | 1/1 | Complete    | 2026-04-01 |
-| 5. Editor & Scripting Fundamentals | 0/TBD | Not started | - |
+| 5. Editor & Scripting Fundamentals | 0/2 | Not started | - |
 | 6. Core Gameplay Systems | 0/TBD | Not started | - |
 | 7. Presentation Layer | 0/TBD | Not started | - |
 | 8. Production & Platform | 0/TBD | Not started | - |
