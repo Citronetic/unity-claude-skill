@@ -15,7 +15,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 1: Scraping Infrastructure** - Chrome integration working, URL tree mapped, manifest tracking extraction status (completed 2026-03-30)
 - [x] **Phase 2: Content Extraction** - All tutorial pages scraped with verified Markdown content (completed 2026-03-31)
 - [x] **Phase 3: Content Synthesis** - Tutorial prose restructured into concise reference format with version-verified APIs (completed 2026-03-31)
-- [ ] **Phase 4: Skill Foundation** - SKILL.md routing table and progressive disclosure architecture in place
+- [x] **Phase 4: Skill Foundation** - SKILL.md routing table and progressive disclosure architecture in place (completed 2026-04-01)
 - [ ] **Phase 5: Editor & Scripting Fundamentals** - Foundation reference files covering project setup, editor workflows, and C# scripting
 - [ ] **Phase 6: Core Gameplay Systems** - Physics, input, and testing reference files delivering the gameplay loop knowledge
 - [ ] **Phase 7: Presentation Layer** - Rendering, UI, animation, and audio reference files covering visual and audio output
@@ -85,7 +85,7 @@ Plans:
 **Plans**: 1 plan
 
 Plans:
-- [ ] 04-01-PLAN.md -- Create SKILL.md with frontmatter and routing table, establish references/ directory with 16 placeholder files
+- [x] 04-01-PLAN.md -- Create SKILL.md with frontmatter and routing table, establish references/ directory with 16 placeholder files
 
 ### Phase 5: Editor & Scripting Fundamentals
 **Goal**: The foundational reference files that all other domain files depend on are complete and accurate
@@ -174,7 +174,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 (and 7 in parallel) 
 | 1. Scraping Infrastructure | 3/3 | Complete    | 2026-03-30 |
 | 2. Content Extraction | 1/2 | Complete    | 2026-03-31 |
 | 3. Content Synthesis | 3/3 | Complete    | 2026-03-31 |
-| 4. Skill Foundation | 0/1 | Not started | - |
+| 4. Skill Foundation | 1/1 | Complete    | 2026-04-01 |
 | 5. Editor & Scripting Fundamentals | 0/TBD | Not started | - |
 | 6. Core Gameplay Systems | 0/TBD | Not started | - |
 | 7. Presentation Layer | 0/TBD | Not started | - |

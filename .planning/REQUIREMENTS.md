@@ -32,11 +32,11 @@
 
 ### Skill Foundation
 
-- [ ] **SKIL-01**: SKILL.md has valid YAML frontmatter with name, description, and paths triggers
-- [ ] **SKIL-02**: SKILL.md body is a routing table mapping user intent to reference files
-- [ ] **SKIL-03**: SKILL.md stays under 500 lines
-- [ ] **SKIL-04**: Skill description has front-loaded keywords for activation matching
-- [ ] **SKIL-05**: Progressive disclosure architecture: SKILL.md -> references/*.md
+- [x] **SKIL-01**: SKILL.md has valid YAML frontmatter with name, description, and paths triggers
+- [x] **SKIL-02**: SKILL.md body is a routing table mapping user intent to reference files
+- [x] **SKIL-03**: SKILL.md stays under 500 lines
+- [x] **SKIL-04**: Skill description has front-loaded keywords for activation matching
+- [x] **SKIL-05**: Progressive disclosure architecture: SKILL.md -> references/*.md
 
 ### Editor & Project Setup
 
@@ -170,11 +170,11 @@
 | SYNTH-03 | Phase 3 | Complete |
 | SYNTH-04 | Phase 3 | Complete |
 | SYNTH-05 | Phase 3 | Complete |
-| SKIL-01 | Phase 4 | Pending |
-| SKIL-02 | Phase 4 | Pending |
-| SKIL-03 | Phase 4 | Pending |
-| SKIL-04 | Phase 4 | Pending |
-| SKIL-05 | Phase 4 | Pending |
+| SKIL-01 | Phase 4 | Complete |
+| SKIL-02 | Phase 4 | Complete |
+| SKIL-03 | Phase 4 | Complete |
+| SKIL-04 | Phase 4 | Complete |
+| SKIL-05 | Phase 4 | Complete |
 | EDIT-01 | Phase 5 | Pending |
 | EDIT-02 | Phase 5 | Pending |
 | EDIT-03 | Phase 5 | Pending |

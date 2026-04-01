@@ -2,15 +2,15 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: completed
-stopped_at: Phase 4 context gathered
-last_updated: "2026-04-01T02:43:34.387Z"
-last_activity: 2026-03-31 -- Completed 03-03-PLAN (Verify synthesis against API index)
+status: in-progress
+stopped_at: Completed 04-01-PLAN (Skill Foundation)
+last_updated: "2026-04-01T02:57:49Z"
+last_activity: 2026-04-01 -- Completed 04-01-PLAN (SKILL.md and references/ skeleton)
 progress:
   total_phases: 9
-  completed_phases: 3
-  total_plans: 8
-  completed_plans: 8
+  completed_phases: 4
+  total_plans: 9
+  completed_plans: 9
   percent: 100
 ---
 
@@ -21,23 +21,23 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-29)
 
 **Core value:** Every Unity development workflow, CLI command, and best practice from the official tutorials is captured in a single, accurate, actionable skill file.
-**Current focus:** Phase 3: Content Synthesis (Complete)
+**Current focus:** Phase 4: Skill Foundation (Complete)
 
 ## Current Position
 
-Phase: 3 of 9 (Content Synthesis) -- COMPLETE
-Plan: 3 of 3 in current phase (03-03 complete)
-Status: Phase 3 Complete -- Ready for Phase 4
-Last activity: 2026-03-31 -- Completed 03-03-PLAN (Verify synthesis against API index)
+Phase: 4 of 9 (Skill Foundation) -- COMPLETE
+Plan: 1 of 1 in current phase (04-01 complete)
+Status: Phase 4 Complete -- Ready for Phase 5
+Last activity: 2026-04-01 -- Completed 04-01-PLAN (SKILL.md and references/ skeleton)
 
 Progress: [##########] 100%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 7
-- Average duration: 13.3min
-- Total execution time: 1.55 hours
+- Total plans completed: 8
+- Average duration: 12.0min
+- Total execution time: 1.6 hours
 
 **By Phase:**
 
@@ -50,10 +50,11 @@ Progress: [##########] 100%
 | Phase 03 P01 | 4min | 2 tasks | 5 files |
 | Phase 03 P02 | 15min | 2 tasks | 17 files |
 | Phase 03 P03 | 4min | 2 tasks | 2 files |
+| Phase 04 P01 | 3min | 2 tasks | 17 files |
 
 **Recent Trend:**
-- Last 5 plans: 35min, 8min, 4min, 15min, 4min
-- Trend: P03-03 verification pass confirmed all synthesis files compliant
+- Last 5 plans: 8min, 4min, 15min, 4min, 3min
+- Trend: Phase 4 skeleton created in 3min; fastest plan yet
 
 *Updated after each plan completion*
 
@@ -90,6 +91,9 @@ Recent decisions affecting current work:
 - [Phase 03]: Code examples written as complete scripts with using statements, class context, SerializeField attributes
 - [Phase 03]: Package APIs (Input System, Addressables, URP) verified via known-pattern allowlist since not in extracted core API docs
 - [Phase 03]: 3-pass verification: API names (188 verified), deprecated patterns (19 warnings/0 errors), code completeness (79 complete/0 issues)
+- [Phase 04]: SKILL.md at 90 lines -- dense routing table with intent examples, well under 500-line limit
+- [Phase 04]: 10 universal principles covering Unity 6+ opinionated guidance (URP, UI Toolkit, New Input System, Addressables, etc.)
+- [Phase 04]: Routing table uses markdown tables grouped by 5 categories for quick scanning
 
 ### Pending Todos
 
@@ -104,6 +108,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-04-01T02:43:34.381Z
-Stopped at: Phase 4 context gathered
-Resume file: .planning/phases/04-skill-foundation/04-CONTEXT.md
+Last session: 2026-04-01T02:57:49Z
+Stopped at: Completed 04-01-PLAN (Skill Foundation)
+Resume file: .planning/phases/04-skill-foundation/04-01-SUMMARY.md
