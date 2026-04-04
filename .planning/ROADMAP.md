@@ -1,180 +1,36 @@
 # Roadmap: Unity Development Skill for Claude Code
 
-## Overview
+## Milestones
 
-This project builds a Claude Code skill for Unity game development by systematically scraping the official Unity tutorial hub, extracting and synthesizing content into structured reference files, and packaging everything into a multi-file Agent Skills plugin. The build follows a strict dependency chain: scraping infrastructure must work before content can be extracted, extraction must complete before synthesis, synthesis must complete before any skill files are written, and the skill foundation (SKILL.md routing table) must exist before domain-specific reference files can be created. Domain reference files then follow their own dependency order: editor/scripting fundamentals first, then gameplay systems, then presentation layer, then production concerns. Final validation ensures every file meets size, quality, and activation constraints.
+- ✅ **v1.0 Unity Development Skill** — Phases 1-9 (shipped 2026-04-04)
 
 ## Phases
 
-**Phase Numbering:**
-- Integer phases (1, 2, 3): Planned milestone work
-- Decimal phases (2.1, 2.2): Urgent insertions (marked with INSERTED)
+<details>
+<summary>✅ v1.0 Unity Development Skill (Phases 1-9) — SHIPPED 2026-04-04</summary>
 
-Decimal phases appear between their surrounding integers in numeric order.
+- [x] Phase 1: Scraping Infrastructure (3/3 plans) — completed 2026-03-30
+- [x] Phase 2: Content Extraction (2/2 plans) — completed 2026-03-31
+- [x] Phase 3: Content Synthesis (3/3 plans) — completed 2026-03-31
+- [x] Phase 4: Skill Foundation (1/1 plans) — completed 2026-04-01
+- [x] Phase 5: Editor & Scripting Fundamentals (2/2 plans) — completed 2026-04-01
+- [x] Phase 6: Core Gameplay Systems (2/2 plans) — completed 2026-04-01
+- [x] Phase 7: Presentation Layer (3/3 plans) — completed 2026-04-01
+- [x] Phase 8: Production & Platform (1/1 plans) — completed 2026-04-01
+- [x] Phase 9: Quality & Validation (1/1 plans) — completed 2026-04-01
 
-- [x] **Phase 1: Scraping Infrastructure** - Chrome integration working, URL tree mapped, manifest tracking extraction status (completed 2026-03-30)
-- [x] **Phase 2: Content Extraction** - All tutorial pages scraped with verified Markdown content (completed 2026-03-31)
-- [x] **Phase 3: Content Synthesis** - Tutorial prose restructured into concise reference format with version-verified APIs (completed 2026-03-31)
-- [x] **Phase 4: Skill Foundation** - SKILL.md routing table and progressive disclosure architecture in place (completed 2026-04-01)
-- [x] **Phase 5: Editor & Scripting Fundamentals** - Foundation reference files covering project setup, editor workflows, and C# scripting (completed 2026-04-01)
-- [x] **Phase 6: Core Gameplay Systems** - Physics, input, and testing reference files delivering the gameplay loop knowledge (completed 2026-04-01)
-- [x] **Phase 7: Presentation Layer** - Rendering, UI, animation, and audio reference files covering visual and audio output (completed 2026-04-01)
-- [x] **Phase 8: Production & Platform** - Build/deploy, asset pipeline, CLI tools, and mobile platform reference files (completed 2026-04-01)
-- [x] **Phase 9: Quality & Validation** - All files validated against size limits, activation tested, context budget confirmed (completed 2026-04-01)
-
-## Phase Details
-
-### Phase 1: Scraping Infrastructure
-**Goal**: Chrome integration reliably reads Unity tutorial pages and a complete URL manifest tracks every page to be scraped
-**Depends on**: Nothing (first phase)
-**Requirements**: SCRP-01, SCRP-02, SCRP-03, SCRP-04, SCRP-05, SCRP-06
-**Success Criteria** (what must be TRUE):
-  1. Chrome integration (built-in or MCP) can navigate to a Unity tutorial page and return rendered text content
-  2. The unity.com/cn language behavior is resolved with a documented fallback to the English site if needed
-  3. A scraping manifest file exists listing every content URL with status tracking (pending/scraped/verified/failed)
-  4. Hidden content behind tabs and accordions is expanded and captured in at least one test page
-  5. Content verification confirms extracted pages have substantive content (>100 words)
-**Plans**: 3 plans
-
-Plans:
-- [x] 01-01-PLAN.md -- Chrome integration setup and CN site language resolution
-- [x] 01-02-PLAN.md -- URL tree discovery and manifest creation with status tracking
-- [x] 01-03-PLAN.md -- Hidden content expansion and content verification pipeline
-
-### Phase 2: Content Extraction
-**Goal**: Every tutorial content page is scraped, converted to clean Markdown, and verified against the manifest
-**Depends on**: Phase 1
-**Requirements**: EXTR-01, EXTR-02, EXTR-03, EXTR-04, EXTR-05
-**Success Criteria** (what must be TRUE):
-  1. The scraping manifest shows 100% of content URLs have status "verified"
-  2. Extracted content is clean Markdown (not raw HTML) with properly formatted code blocks
-  3. Duplicate pages across tutorial pathways are de-duplicated to a single canonical version
-  4. Each extracted page file includes a Unity version tag
-**Plans**: 2 plans
-
-Plans:
-- [x] 02-01-PLAN.md -- Batch extraction orchestrator with concurrency, throttling, dedup, and version tagging
-- [ ] 02-02-PLAN.md -- Full extraction run, verification reporting, and human quality check
-
-### Phase 3: Content Synthesis
-**Goal**: Raw tutorial content is restructured from pedagogical walkthrough format into concise, actionable reference material verified against Unity 6.3
-**Depends on**: Phase 2
-**Requirements**: SYNTH-01, SYNTH-02, SYNTH-03, SYNTH-04, SYNTH-05
-**Success Criteria** (what must be TRUE):
-  1. Synthesized content reads as concise reference material, not step-by-step tutorials
-  2. All API names in the synthesized content are verified against Unity 6.3 scripting documentation
-  3. Deprecated patterns are identified and replaced with current Unity 6 equivalents
-  4. Code examples include using statements and class context (not bare snippets)
-  5. Content that Claude already knows from training data is filtered out, keeping only Unity-specific additive knowledge
-**Plans**: 3 plans
-
-Plans:
-- [x] 03-01-PLAN.md -- Synthesis infrastructure: topic mapping, API index, and deprecated patterns reference
-- [x] 03-02-PLAN.md -- Curate and synthesize all 16 reference topics into intermediate files
-- [x] 03-03-PLAN.md -- Verify synthesis against API index and fix deprecated patterns
-
-### Phase 4: Skill Foundation
-**Goal**: SKILL.md exists with valid frontmatter, a routing table covering all reference files, and the progressive disclosure architecture is established
-**Depends on**: Phase 3
-**Requirements**: SKIL-01, SKIL-02, SKIL-03, SKIL-04, SKIL-05
-**Success Criteria** (what must be TRUE):
-  1. SKILL.md has valid YAML frontmatter with name, description, and paths triggers for Unity file extensions
-  2. SKILL.md body contains a routing table mapping user intents (e.g., "physics", "scripting", "build") to specific reference files
-  3. SKILL.md is under 500 lines and the description has front-loaded high-frequency Unity keywords
-  4. The references/ directory structure is created with the progressive disclosure layout (SKILL.md -> references/*.md)
-**Plans**: 1 plan
-
-Plans:
-- [x] 04-01-PLAN.md -- Create SKILL.md with frontmatter and routing table, establish references/ directory with 16 placeholder files
-
-### Phase 5: Editor & Scripting Fundamentals
-**Goal**: The foundational reference files that all other domain files depend on are complete and accurate
-**Depends on**: Phase 4
-**Requirements**: EDIT-01, EDIT-02, EDIT-03, SCPT-01, SCPT-02, SCPT-03, SCPT-04
-**Success Criteria** (what must be TRUE):
-  1. references/project-setup.md covers Unity Hub, project creation, folder structure, .gitignore, LFS config, and meta file handling
-  2. references/editor-workflows.md covers scene management, GameObjects, Prefabs, and Inspector workflows
-  3. references/scripting-fundamentals.md covers MonoBehaviour lifecycle, components, events, and serialization
-  4. references/scripting-patterns.md covers ScriptableObjects, coroutines, async/await, and explicitly steers away from deprecated patterns
-**Plans**: 2 plans
-
-Plans:
-- [x] 05-01-PLAN.md -- Populate project-setup.md and editor-workflows.md from synthesis content
-- [x] 05-02-PLAN.md -- Populate scripting-fundamentals.md and scripting-patterns.md from synthesis content
-
-### Phase 6: Core Gameplay Systems
-**Goal**: Reference files covering the gameplay loop (physics, input, testing) are complete and cross-referenced
-**Depends on**: Phase 5
-**Requirements**: PHYS-01, PHYS-02, PHYS-03, INPUT-01, INPUT-02, INPUT-03, TEST-01, TEST-02
-**Success Criteria** (what must be TRUE):
-  1. references/physics.md covers Rigidbody, Colliders, triggers, raycasting, and callbacks for both 2D and 3D
-  2. references/input-system.md covers New Input System (Input Actions, bindings, PlayerInput component) and explicitly recommends it over legacy InputManager
-  3. references/testing.md covers Unity Test Framework with EditMode and PlayMode test patterns using NUnit
-  4. Touch and mobile input patterns are documented alongside desktop input
-**Plans**: 2 plans
-
-Plans:
-- [x] 06-01-PLAN.md -- Populate references/physics.md from synthesis (PHYS-01, PHYS-02, PHYS-03)
-- [x] 06-02-PLAN.md -- Populate references/input-system.md and references/testing.md from synthesis (INPUT-01, INPUT-02, INPUT-03, TEST-01, TEST-02)
-
-### Phase 7: Presentation Layer
-**Goal**: Reference files covering visual output, UI, animation, and audio are complete
-**Depends on**: Phase 5
-**Requirements**: RNDR-01, RNDR-02, RNDR-03, UI-01, UI-02, UI-03, ANIM-01, ANIM-02, AUDIO-01, AUDIO-02
-**Success Criteria** (what must be TRUE):
-  1. references/rendering-2d.md covers sprites, SpriteRenderer, 2D lighting, and tilemaps
-  2. references/rendering-3d.md covers materials, lighting, cameras, and URP setup with an explicit recommendation of URP over Built-in Render Pipeline
-  3. references/ui-toolkit.md covers UI Toolkit as primary system with uGUI guidance for legacy projects, including both runtime and editor UI patterns
-  4. references/animation.md covers Animator state machines, animation clips, and procedural animation patterns
-  5. references/audio.md covers AudioSource, AudioListener, AudioMixer, and compression format considerations
-**Plans**: 3 plans
-
-Plans:
-- [x] 07-01-PLAN.md -- Populate rendering-2d.md and rendering-3d.md from synthesis content
-- [x] 07-02-PLAN.md -- Populate ui-toolkit.md and animation.md from synthesis content
-- [x] 07-03-PLAN.md -- Populate audio.md from synthesis content
-
-### Phase 8: Production & Platform
-**Goal**: Reference files covering build, deployment, asset management, CLI tools, and mobile optimization are complete
-**Depends on**: Phase 6, Phase 7
-**Requirements**: BUILD-01, BUILD-02, BUILD-03, ASSET-01, ASSET-02, MOBL-01, MOBL-02
-**Success Criteria** (what must be TRUE):
-  1. references/build-deploy.md covers build settings, player settings, platform switching, and IL2CPP vs Mono backends
-  2. references/cli-tools.md covers Unity command-line arguments and batch mode operations
-  3. references/asset-pipeline.md covers import settings, asset management, and Addressables as the modern replacement for Resources.Load
-  4. references/mobile-platform.md covers mobile-specific optimization, touch input, screen resolution, and performance considerations
-**Plans**: 1 plan
-
-Plans:
-- [x] 08-01-PLAN.md -- Populate build-deploy, cli-tools, asset-pipeline, and mobile-platform references from synthesis
-
-### Phase 9: Quality & Validation
-**Goal**: Every reference file meets size and quality constraints, the skill activates correctly, and total content fits within context budget
-**Depends on**: Phase 8
-**Requirements**: QUAL-01, QUAL-02, QUAL-03, QUAL-04, QUAL-05
-**Success Criteria** (what must be TRUE):
-  1. Every reference file is under 300 lines
-  2. All reference files include Unity 6+ version annotations and explicit DO/DO NOT guidance
-  3. The skill activates correctly when asked representative Unity development questions
-  4. Total skill content (SKILL.md + all references) stays under 5% of Claude context window
-**Plans**: 1 plan
-
-Plans:
-- [x] 09-01-PLAN.md -- Validate all reference files against size, version, guidance, activation, and budget constraints
+</details>
 
 ## Progress
 
-**Execution Order:**
-Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 (and 7 in parallel) -> 8 -> 9
-
-| Phase | Plans Complete | Status | Completed |
-|-------|----------------|--------|-----------|
-| 1. Scraping Infrastructure | 3/3 | Complete    | 2026-03-30 |
-| 2. Content Extraction | 1/2 | Complete    | 2026-03-31 |
-| 3. Content Synthesis | 3/3 | Complete    | 2026-03-31 |
-| 4. Skill Foundation | 1/1 | Complete    | 2026-04-01 |
-| 5. Editor & Scripting Fundamentals | 2/2 | Complete    | 2026-04-01 |
-| 6. Core Gameplay Systems | 2/2 | Complete    | 2026-04-01 |
-| 7. Presentation Layer | 3/3 | Complete    | 2026-04-01 |
-| 8. Production & Platform | 1/1 | Complete    | 2026-04-01 |
-| 9. Quality & Validation | 1/1 | Complete    | 2026-04-01 |
+| Phase | Milestone | Plans Complete | Status | Completed |
+|-------|-----------|----------------|--------|-----------|
+| 1. Scraping Infrastructure | v1.0 | 3/3 | Complete | 2026-03-30 |
+| 2. Content Extraction | v1.0 | 2/2 | Complete | 2026-03-31 |
+| 3. Content Synthesis | v1.0 | 3/3 | Complete | 2026-03-31 |
+| 4. Skill Foundation | v1.0 | 1/1 | Complete | 2026-04-01 |
+| 5. Editor & Scripting Fundamentals | v1.0 | 2/2 | Complete | 2026-04-01 |
+| 6. Core Gameplay Systems | v1.0 | 2/2 | Complete | 2026-04-01 |
+| 7. Presentation Layer | v1.0 | 3/3 | Complete | 2026-04-01 |
+| 8. Production & Platform | v1.0 | 1/1 | Complete | 2026-04-01 |
+| 9. Quality & Validation | v1.0 | 1/1 | Complete | 2026-04-01 |
