@@ -2,16 +2,16 @@
 gsd_state_version: 1.0
 milestone: v1.1
 milestone_name: Unity 2022.3 LTS Skill
-status: planning
-stopped_at: Phase 10 context gathered
-last_updated: "2026-04-04T04:11:33.449Z"
-last_activity: 2026-04-01 — Roadmap created for v1.1 (Phases 10-15)
+status: executing
+stopped_at: Completed 10-01-PLAN.md
+last_updated: "2026-04-04T04:40:25Z"
+last_activity: 2026-04-04 — Completed Plan 10-01 (URL discovery, manifest-2022.json)
 progress:
   total_phases: 6
   completed_phases: 0
-  total_plans: 0
-  completed_plans: 0
-  percent: 0
+  total_plans: 2
+  completed_plans: 1
+  percent: 8
 ---
 
 # Project State
@@ -26,18 +26,22 @@ See: .planning/PROJECT.md (updated 2026-04-04)
 ## Current Position
 
 Phase: 10 (first of 6 in v1.1) — 2022.3 Content Extraction
-Plan: — (ready to plan)
-Status: Ready to plan
-Last activity: 2026-04-01 — Roadmap created for v1.1 (Phases 10-15)
+Plan: 1 of 2 complete — next: 10-02 (Batch Extract)
+Status: Executing
+Last activity: 2026-04-04 — Completed Plan 10-01 (URL discovery, manifest-2022.json)
 
-Progress: [..........] 0%
+Progress: [#.........] 8%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 0 (this milestone)
-- Average duration: —
-- Total execution time: 0 hours
+- Total plans completed: 1 (this milestone)
+- Average duration: 19 min
+- Total execution time: 0.3 hours
+
+| Phase | Plan | Duration | Tasks | Files |
+|-------|------|----------|-------|-------|
+| 10 | 01 | 19min | 2 | 2 |
 
 ## Accumulated Context
 
@@ -48,6 +52,9 @@ Progress: [..........] 0%
 - [v1.1]: Source: docs.unity3d.com/2022.3 documentation
 - [v1.1]: Reuse v1.0 scraping/synthesis infrastructure where possible
 - [v1.1]: 6 phases (10-15) covering extraction, synthesis, references, quality
+- [10-01]: Streaming sitemap filter for root sitemap (28 sub-sitemaps, 1.4M URLs) — filter during parse
+- [10-01]: Unified root sitemap pass for all 3 sources (manual, api, packages)
+- [10-01]: Broad package inclusion (all com.unity.* from sitemap, 28671 after dedup)
 
 ### Pending Todos
 
@@ -59,6 +66,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-04-04T04:11:33.447Z
-Stopped at: Phase 10 context gathered
-Resume file: .planning/phases/10-2022-3-content-extraction/10-CONTEXT.md
+Last session: 2026-04-04T04:40:25Z
+Stopped at: Completed 10-01-PLAN.md
+Resume file: .planning/phases/10-2022-3-content-extraction/10-02-PLAN.md

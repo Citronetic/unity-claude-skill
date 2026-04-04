@@ -7,7 +7,7 @@
 
 ### Extraction Infrastructure
 
-- [ ] **EXT22-01**: URL manifest built for docs.unity3d.com/2022.3 Manual, API Reference, and Package docs
+- [x] **EXT22-01**: URL manifest built for docs.unity3d.com/2022.3 Manual, API Reference, and Package docs
 - [ ] **EXT22-02**: All 2022.3 Manual pages extracted to clean Markdown
 - [ ] **EXT22-03**: All 2022.3 API Reference pages extracted to clean Markdown
 - [ ] **EXT22-04**: 2022.3 Package documentation extracted (Input System, Addressables, URP, etc.)
@@ -84,7 +84,7 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| EXT22-01 | Phase 10 | Pending |
+| EXT22-01 | Phase 10 | Complete |
 | EXT22-02 | Phase 10 | Pending |
 | EXT22-03 | Phase 10 | Pending |
 | EXT22-04 | Phase 10 | Pending |

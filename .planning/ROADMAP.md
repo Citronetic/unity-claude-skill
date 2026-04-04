@@ -48,7 +48,7 @@
 **Plans**: 2 plans
 
 Plans:
-- [ ] 10-01-PLAN.md — Discover 2022.3 URLs and produce manifest-2022.json
+- [x] 10-01-PLAN.md — Discover 2022.3 URLs and produce manifest-2022.json
 - [ ] 10-02-PLAN.md — Batch extract all 2022.3 content and verify quality
 
 ### Phase 11: Content Synthesis
@@ -146,7 +146,7 @@ Phases execute in numeric order: 10 → 11 → 12 → 13 → 14 → 15
 | 7. Presentation Layer | v1.0 | 3/3 | Complete | 2026-04-01 |
 | 8. Production & Platform | v1.0 | 1/1 | Complete | 2026-04-01 |
 | 9. Quality & Validation | v1.0 | 1/1 | Complete | 2026-04-01 |
-| 10. 2022.3 Content Extraction | v1.1 | 0/2 | Planning | - |
+| 10. 2022.3 Content Extraction | v1.1 | 1/2 | In Progress | - |
 | 11. Content Synthesis | v1.1 | 0/? | Not started | - |
 | 12. Skill Foundation & Core References | v1.1 | 0/? | Not started | - |
 | 13. Gameplay & Presentation References | v1.1 | 0/? | Not started | - |
