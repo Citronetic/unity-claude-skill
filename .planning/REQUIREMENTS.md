@@ -84,13 +84,47 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| (Populated during roadmap creation) | | |
+| EXT22-01 | Phase 10 | Pending |
+| EXT22-02 | Phase 10 | Pending |
+| EXT22-03 | Phase 10 | Pending |
+| EXT22-04 | Phase 10 | Pending |
+| EXT22-05 | Phase 10 | Pending |
+| SYN22-01 | Phase 11 | Pending |
+| SYN22-02 | Phase 11 | Pending |
+| SYN22-03 | Phase 11 | Pending |
+| SYN22-04 | Phase 11 | Pending |
+| SYN22-05 | Phase 11 | Pending |
+| SKL22-01 | Phase 12 | Pending |
+| SKL22-02 | Phase 12 | Pending |
+| SKL22-03 | Phase 12 | Pending |
+| SKL22-04 | Phase 12 | Pending |
+| REF22-01 | Phase 12 | Pending |
+| REF22-02 | Phase 12 | Pending |
+| REF22-03 | Phase 12 | Pending |
+| REF22-04 | Phase 12 | Pending |
+| REF22-05 | Phase 13 | Pending |
+| REF22-06 | Phase 13 | Pending |
+| REF22-07 | Phase 13 | Pending |
+| REF22-08 | Phase 13 | Pending |
+| REF22-09 | Phase 13 | Pending |
+| REF22-10 | Phase 13 | Pending |
+| REF22-11 | Phase 13 | Pending |
+| REF22-12 | Phase 13 | Pending |
+| REF22-13 | Phase 14 | Pending |
+| REF22-14 | Phase 14 | Pending |
+| REF22-15 | Phase 14 | Pending |
+| REF22-16 | Phase 14 | Pending |
+| QAL22-01 | Phase 15 | Pending |
+| QAL22-02 | Phase 15 | Pending |
+| QAL22-03 | Phase 15 | Pending |
+| QAL22-04 | Phase 15 | Pending |
+| QAL22-05 | Phase 15 | Pending |
 
 **Coverage:**
-- v1 requirements: 33 total
-- Mapped to phases: 0 (pending roadmap)
-- Unmapped: 33
+- v1 requirements: 35 total
+- Mapped to phases: 35
+- Unmapped: 0
 
 ---
 *Requirements defined: 2026-04-04*
-*Last updated: 2026-04-04 after initial definition*
+*Last updated: 2026-04-01 after roadmap creation (traceability populated)*
