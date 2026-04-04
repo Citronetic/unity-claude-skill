@@ -1,116 +1,51 @@
 ---
 gsd_state_version: 1.0
-milestone: v1.0
-milestone_name: milestone
-status: completed
-stopped_at: Phase 9 complete -- all validation passed. PROJECT DONE.
-last_updated: "2026-04-04T03:22:11.528Z"
-last_activity: 2026-04-01 -- Completed Phase 9 (5 validation checks, all passed)
+milestone: v1.1
+milestone_name: Unity 2022.3 LTS Skill
+status: defining_requirements
+last_updated: "2026-04-04"
+last_activity: 2026-04-04 -- Milestone v1.1 started
 progress:
-  total_phases: 9
-  completed_phases: 7
-  total_plans: 16
-  completed_plans: 18
-  percent: 100
+  total_phases: 0
+  completed_phases: 0
+  total_plans: 0
+  completed_plans: 0
+  percent: 0
 ---
 
 # Project State
 
 ## Project Reference
 
-See: .planning/PROJECT.md (updated 2026-03-29)
+See: .planning/PROJECT.md (updated 2026-04-04)
 
-**Core value:** Every Unity development workflow, CLI command, and best practice from the official tutorials is captured in a single, accurate, actionable skill file.
-**Current focus:** PROJECT COMPLETE -- all 9 phases finished
+**Core value:** Accurate, opinionated Unity development guidance delivered through progressive disclosure.
+**Current focus:** Milestone v1.1: Unity 2022.3 LTS Skill
 
 ## Current Position
 
-Phase: 9 of 9 (Quality & Validation) -- COMPLETE
-Plan: 1 of 1 in current phase (all complete)
-Status: All 9 phases complete. 16 reference files validated. Unity Development Skill ready for use.
-Last activity: 2026-04-01 -- Completed Phase 9 (5 validation checks, all passed)
+Phase: Not started (defining requirements)
+Plan: —
+Status: Defining requirements
+Last activity: 2026-04-04 — Milestone v1.1 started
 
-Progress: [##########] 100%
+Progress: [..........] 0%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 17
-- Average duration: 7.5min
-- Total execution time: 2.1 hours
-
-**By Phase:**
-
-| Phase | Plans | Total | Avg/Plan |
-|-------|-------|-------|----------|
-| Phase 01 P01 | 14min | 2 tasks | 6 files |
-| Phase 01 P02 | 35min | 2 tasks | 2 files |
-| Phase 01 P03 | 13min | 2 tasks | 4 files |
-| Phase 02 P01 | 8min | 2 tasks | 16 files |
-| Phase 03 P01 | 4min | 2 tasks | 5 files |
-| Phase 03 P02 | 15min | 2 tasks | 17 files |
-| Phase 03 P03 | 4min | 2 tasks | 2 files |
-| Phase 04 P01 | 3min | 2 tasks | 17 files |
-| Phase 05 P01 | 3min | 2 tasks | 2 files |
-| Phase 05 P02 | 3min | 2 tasks | 2 files |
-| Phase 06 P01 | 2min | 1 task  | 1 file  |
-| Phase 06 P02 | 3min | 2 tasks | 2 files |
-| Phase 07 P01 | 2min | 2 tasks | 2 files |
-| Phase 07 P02 | 2min | 2 tasks | 2 files |
-| Phase 07 P03 | 1min | 1 task  | 1 file  |
-| Phase 08 P01 | 6min | 4 tasks | 4 files |
-
-| Phase 09 P01 | 2min | 5 tasks | 0 files |
-
-**Recent Trend:**
-- Last 5 plans: 2min, 2min, 1min, 6min, 2min
-- Trend: Final validation phase completed in 2min -- all checks passed, no remediation needed
-
-*Updated after each plan completion*
+- Total plans completed: 0 (this milestone)
+- Average duration: —
+- Total execution time: 0 hours
 
 ## Accumulated Context
 
 ### Decisions
 
-Decisions are logged in PROJECT.md Key Decisions table.
-Recent decisions affecting current work:
-
-- [Roadmap]: 9 phases derived from 17 requirement categories; phases 6 and 7 can execute in parallel since both depend only on Phase 5
-- [Roadmap]: CN site access behavior flagged as first-action item in Phase 1; fallback to English site documented
-- [Phase 01]: Puppeteer is the required browser automation tool (learn.unity.com blocks curl via TLS fingerprinting)
-- [Phase 01]: CN site (unity.com/cn) deprioritized: returns 403 Access Denied. English sources confirmed as primary (learn.unity.com, docs.unity3d.com)
-- [Phase 01]: Unity tutorial URLs restructured -- URL discovery must use live link extraction, not hardcoded paths
-- [Phase 01]: Content selector picks element with most text content to avoid shallow nav wrappers (ScriptReference .content vs .section)
-- [Phase 01]: Error/insufficient pages not retried -- only navigation timeouts trigger retries
-- [Phase 01]: CreatingGameplay.html returns 404 -- Unity Manual URLs restructured, same as tutorial URLs
-- [Phase 01]: Sitemap-first URL discovery -- both learn.unity.com and docs.unity3d.com have XML sitemaps, far faster than BFS crawling
-- [Phase 01]: Version dedup keeps only latest Unity 6 (6000.x) docs -- reduces 80K raw API URLs to 29K unique
-- [Phase 01]: 46K total URLs discovered (13K learn + 3.5K manual + 29K API) -- far exceeds 2-3K estimate
-- [Phase 01]: Package docs @latest only; non-English localized docs excluded
-- [Phase 02]: Source priority: learn -> manual -> api (tutorials most skill-relevant, extracted first)
-- [Phase 02]: SHA-256 content hash dedup detects identical pages; duplicateOf points to canonical URL
-- [Phase 02]: Failed URLs remain eligible for retry; insufficient (<100 words) is terminal status
-- [Phase 02]: Content paths: content/{learn|manual|api}/{url-slug}.md
-- [Phase 03]: API topic assignment uses regex class-name matching from filenames (no file reads needed for 26K files)
-- [Phase 03]: Non-English learn tutorials identified by romanized Korean/Japanese/Spanish filename patterns (266 detected)
-- [Phase 03]: 12,028 pages assigned to 16 topics; 34,155 in skip (mostly unmatched API pages still available via api-index.json)
-- [Phase 03]: Deprecated patterns sourced from Unity 6.0, 6.1, 6.2 upgrade guides plus PITFALLS.md research
-- [Phase 03]: Synthesis files follow consistent 6-section structure (Key Concepts, Patterns, Code Examples, API Reference, DO/DON'T, Version Notes)
-- [Phase 03]: Content prioritized manual > learn > api; generic C#/OOP filtered for Unity-specific additive knowledge
-- [Phase 03]: All Unity 6.x deprecations integrated into per-topic DO/DON'T tables
-- [Phase 03]: Code examples written as complete scripts with using statements, class context, SerializeField attributes
-- [Phase 03]: Package APIs (Input System, Addressables, URP) verified via known-pattern allowlist since not in extracted core API docs
-- [Phase 03]: 3-pass verification: API names (188 verified), deprecated patterns (19 warnings/0 errors), code completeness (79 complete/0 issues)
-- [Phase 04]: SKILL.md at 90 lines -- dense routing table with intent examples, well under 500-line limit
-- [Phase 04]: 10 universal principles covering Unity 6+ opinionated guidance (URP, UI Toolkit, New Input System, Addressables, etc.)
-- [Phase 04]: Routing table uses markdown tables grouped by 5 categories for quick scanning
-- [Phase 05]: Light edit approach for synthesis-to-reference: strip metadata header, simplify title, preserve all content verbatim
-- [Phase 06]: Cross-reference comments added linking physics->scripting-fundamentals, input->scripting-fundamentals, testing->scripting-patterns
-- [Phase 06]: testing.md at 299 lines (just under limit) - no content trimming needed beyond header replacement
-- [Phase 07]: URP-over-Built-in recommendation preserved verbatim in rendering-3d.md DO/DON'T table (RNDR-03)
-- [Phase 08]: mobile-platform.md touch input section replaced with cross-reference to input-system.md to fit 300-line limit
-- [Phase 09]: All 16 reference files pass all 5 validation checks (line count, version annotations, DO/DON'T guidance, skill activation, context budget)
-- [Phase 09]: Progressive disclosure worst-case load is 7,600 tokens (3.8% of 200K window), well under 5% budget
+- [v1.0]: All v1.0 decisions carry forward — see PROJECT.md Key Decisions
+- [v1.1]: Separate skill folder (unity-2022-guide/) alongside existing Unity 6+ skill
+- [v1.1]: Source: docs.unity3d.com/2022.3 documentation
+- [v1.1]: Reuse v1.0 scraping/synthesis infrastructure where possible
 
 ### Pending Todos
 
@@ -118,13 +53,10 @@ None yet.
 
 ### Blockers/Concerns
 
-- [Phase 1 - RESOLVED]: Unity CN site (unity.com/cn) returns 403. English site confirmed as primary.
-- [Phase 1 - RESOLVED]: URL tree mapped -- 46K+ URLs across 3 sources via sitemap parsing
-- [Phase 2 - RESOLVED]: Massive scope (46K URLs) handled by batch-extract.mjs with resumable manifest-driven processing
-- [Phase 2 - RESOLVED]: learn.unity.com non-English tutorials (Korean, Japanese, Spanish) filtered to skip bucket via filename pattern matching
+None yet.
 
 ## Session Continuity
 
-Last session: 2026-04-01T06:41:18Z
-Stopped at: Phase 9 complete -- all validation passed. PROJECT DONE.
+Last session: 2026-04-04
+Stopped at: Milestone v1.1 started — defining requirements
 Resume file: None

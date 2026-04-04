@@ -22,7 +22,21 @@ Accurate, opinionated Unity 6+ development guidance that steers developers towar
 
 ### Active
 
-(None — v1.0 shipped)
+- [ ] Create Unity 2022.3 LTS skill variant as a separate installable folder
+- [ ] Extract content from docs.unity3d.com/2022.3 documentation
+- [ ] Synthesize 2022.3-specific reference files covering the same 16 topics
+- [ ] Highlight differences from Unity 6+ (Built-in RP default, old Input Manager, no Awaitable, etc.)
+- [ ] Publish unity-2022-guide/ folder to GitHub repo
+
+## Current Milestone: v1.1 Unity 2022.3 LTS Skill
+
+**Goal:** Create a separate Claude Code skill for Unity 2022.3 LTS, the most widely used production Unity version.
+
+**Target features:**
+- Separate unity-2022-guide/ skill folder
+- 16 reference files adapted for 2022.3 APIs and patterns
+- Version-specific DO/DON'T guidance (e.g., Built-in RP is default, not deprecated)
+- Source: docs.unity3d.com/2022.3 documentation
 
 ### Out of Scope
 
@@ -61,4 +75,4 @@ Target audience: developers using Claude Code for Unity projects.
 | Single-folder installation | unity-development-guide/ folder users copy to ~/.claude/skills/ | ✓ Good |
 
 ---
-*Last updated: 2026-04-04 after v1.0 milestone*
+*Last updated: 2026-04-04 after v1.1 milestone start*
